@@ -27,6 +27,7 @@ a {
   justify-content: center;
   text-align: center;
   width: 100%;
+  font-family: "Poppins", sans-serif;
 }
 .main .content-about {
   display: flex;
@@ -35,7 +36,6 @@ a {
   border: 1px solid blue;
   border-style: none;
   padding: 50px;
-  font-family: "Poppins", sans-serif;
 }
 .main .content-about img {
   transform: translateX(25%);
@@ -45,6 +45,7 @@ a {
   color: rgb(129, 47, 47);
   margin-bottom: 15px;
   margin-top: 15px;
+  text-transform: uppercase;
 }
 .main .content-about .text-about p {
   text-align: justify;
@@ -65,10 +66,11 @@ a {
   display: flex;
 }
 .main .about-plus .text figure {
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 5px 10px 0px rgba(2, 3, 102, 0.5);
   margin: 20px 25px 20px 25px;
   transition: all 0.5s ease;
   border-radius: 15px;
+  background: rgb(233, 232, 235);
 }
 .main .about-plus .text figure ion-icon {
   margin-top: 20px;

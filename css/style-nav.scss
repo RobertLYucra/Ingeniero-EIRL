@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:600,700|Quicksand:300,400|Yeon+Sung&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 ul, ol, li {
     list-style: none; }
   
@@ -48,7 +50,7 @@ ul, ol, li {
       transition: clip-path .5s ease-out;
       z-index: 50; }
       nav ul .opciones {
-        width: 100%;
+        width: 95%;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -57,26 +59,25 @@ ul, ol, li {
         z-index: 80; 
         .active a{
           color: red;
+          
         } 
+
 
       }
         nav ul .opciones li {
           width: 180px;
           margin: 20px 0; 
           text-transform: uppercase;
-          
         }
 
           nav ul .opciones li a {
             color: rgb(1, 1, 119);
-            padding: 10px 30px;
-            border-bottom: 2px solid transparent;
             transition: all ease-in .8s;
             
           }
             
             nav ul .opciones li a:hover {
-              color: #f1f1f1; 
+              color: green; 
             
     }
   
@@ -93,7 +94,7 @@ ul, ol, li {
         border-radius: 4px;
         display: block;
         position: absolute;
-        background: #fff;
+        background: black;
         transition: all 0.25s ease;
         transform-origin: 0px 100%; }
       nav .menu span:nth-child(2) {
@@ -112,18 +113,25 @@ ul, ol, li {
   
   .activeMenu {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
-  
+  @media screen and (max-width: 768px){
+    nav ul .opciones li a{
+      font-weight: bold;
+    }
+  }
   @media screen and (min-width: 768px) {
     nav ul {
       position: initial;
       clip-path: none; }
       nav ul .opciones {
         flex-direction: row;
-        justify-content: flex-end; }
+        justify-content: flex-end;
+        
+       }
         nav ul .opciones li {
           margin: 0 10px;
           width: auto; }
           nav ul .opciones li a {
+            font-weight: bold;
             margin: 0;
             padding: 0; }
     nav .menu {
