@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:600,700|Quicksand:300,400|Yeon+Sung&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+}
+
+main {
+  margin-top: 120px;
+  font-family: "Poppins", sans-serif;
+}
+main .main-content .perfil .title {
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  line-height: 25px;
+}
+main .main-content .perfil .title p {
+  border-bottom: 1px solid red;
+  margin: 0 auto;
+  width: 450px;
+}
+main .main-content .perfil .informacion {
+  display: grid;
+  margin-top: 50px;
+}
+main .main-content .perfil .informacion .info-gg {
+  margin: auto;
+  display: flex;
+  margin-bottom: 60px;
+  width: auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgb(105, 105, 107);
+}
+main .main-content .perfil .informacion .info-gg figure {
+  margin: 20px 50px;
+}
+main .main-content .perfil .informacion .info-gg figure img {
+  height: auto;
+}
+main .main-content .perfil .informacion .info-gg .caja {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+main .main-content .perfil .informacion .info-gg .caja .especialidad {
+  margin: auto;
+}
+main .main-content .perfil .informacion .info-gg .caja .especialidad .text {
+  font-size: 18px;
+  line-height: 35px;
+}
+main .main-content .perfil .informacion .info-gg .caja .especialidad .text .ic {
+  color: rgb(8, 8, 141);
+}
+main .main-content .perfil .informacion .info-gg .caja .especialidad li {
+  margin-top: 15px;
+  line-height: 30px;
+  font-size: 18px;
+}
+main .main-content .perfil .informacion .info-gg .caja .especialidad li ul .icon {
+  color: red;
+  padding-right: 15px;
+}
+main .main-content .logros h2, main .main-content .logros p {
+  text-align: center;
+  margin: 25px 0;
+}
+main .main-content .logros .cards {
+  margin: 50px 100px;
+}
+main .main-content .logros .cards .images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(428px, 1fr));
+}
+main .main-content .logros .cards .images .face {
+  margin: 0px 15px 20px 15px;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgb(95, 94, 94);
+}
+main .main-content .logros .cards .images .face img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px groove rgb(105, 105, 107);
+}
+main .main-content .logros .cards .images .face:hover {
+  transform: scale(1.2);
+  z-index: 9;
+}
+main .main-content .logros .cards .images .face:hover img {
+  z-index: -55;
+}
+main .main-content .logros .cards .images .face:hover::before {
+  content: var(--content);
+  position: absolute;
+  font-weight: bold;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: rgb(57, 43, 247);
+  padding: 0 25px;
+  font-size: 12px;
+  border-radius: 15px;
+}
+main .main-content .projects h2, main .main-content .projects p {
+  text-align: center;
+  margin: 25px 0;
+}
+main .main-content .projects .cards {
+  margin: 50px 100px;
+  transition: all 0.5s ease;
+}
+main .main-content .projects .cards .images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(428px, 1fr));
+}
+main .main-content .projects .cards .images .face {
+  margin: 0px 15px 20px 15px;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgb(95, 94, 94);
+}
+main .main-content .projects .cards .images .face img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px groove rgb(105, 105, 107);
+}
+main .main-content .projects .cards .images .face:hover {
+  transform: scale(1.2);
+  z-index: 9;
+}
+main .main-content .projects .cards .images .face:hover img {
+  z-index: -55;
+}
+main .main-content .projects .cards .images .face:hover::before {
+  content: var(--content);
+  position: absolute;
+  font-weight: bold;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: rgb(57, 43, 247);
+  padding: 0 25px;
+  font-size: 12px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  main .main-content .perfil .informacion .info-gg {
+    flex-direction: column;
+  }
+  main .main-content .logros .cards {
+    margin: 50px 30px;
+  }
+}/*# sourceMappingURL=style-profesional.css.map */

@@ -50,7 +50,7 @@ ul, ol, li {
       transition: clip-path .5s ease-out;
       z-index: 50; }
       nav ul .opciones {
-        width: 95%;
+        width: 100%;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -136,6 +136,12 @@ ul, ol, li {
             padding: 0; }
     nav .menu {
       display: none; } }
+
+  @media screen and (max-width: 880px) {
+    nav ul li a{
+      font-size: 13px;
+    }
+  }
   @media screen and (min-width: 1024px) {
     nav {
       height: 70px; }

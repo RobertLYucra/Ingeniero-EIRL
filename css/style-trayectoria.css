@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:600,700|Quicksand:300,400|Yeon+Sung&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+}
+
+main {
+  margin-top: 120px;
+  font-family: "Poppins", sans-serif;
+}
+main .content-info {
+  margin: 0 300px;
+  text-align: center;
+}
+main .content-info span {
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+}
+main .projects h2, main .projects p {
+  text-align: center;
+  margin: 25px 0;
+}
+main .projects .cards {
+  margin: 50px 100px;
+}
+main .projects .cards .images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(428px, 1fr));
+}
+main .projects .cards .images .face {
+  margin: 0px 15px 20px 15px;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgb(95, 94, 94);
+}
+main .projects .cards .images .face img {
+  width: 100%;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 2px groove rgb(105, 105, 107);
+}
+main .projects .cards .images .face:hover {
+  transform: scale(1.2);
+  z-index: 9;
+}
+main .projects .cards .images .face:hover img {
+  z-index: -55;
+}
+main .projects .cards .images .face:hover::before {
+  content: var(--content);
+  position: absolute;
+  font-weight: bold;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: rgb(57, 43, 247);
+  padding: 0 25px;
+  font-size: 12px;
+  border-radius: 15px;
+}/*# sourceMappingURL=style-trayectoria.css.map */
