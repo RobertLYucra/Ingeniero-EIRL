@@ -120,7 +120,7 @@ main .main-content .projects h2, main .main-content .projects p {
   margin: 25px 0;
 }
 main .main-content .projects .cards {
-  margin: 50px 100px;
+  margin: 50px 150px;
   transition: all 0.5s ease;
 }
 main .main-content .projects .cards .images {
