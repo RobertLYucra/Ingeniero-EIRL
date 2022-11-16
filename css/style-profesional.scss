@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:600,700|Quicksand:300,400|Yeon+Sung&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body {
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px; 
+ }
+
+ main{
+    margin-top: 120px;
+    font-family: 'Poppins', sans-serif;
+    .main-content{
+        .perfil{
+
+            .title{
+                justify-items: center;
+                align-items: center;
+                text-align: center;
+                line-height: 25px;
+                p{
+                    border-bottom: 1px solid red ;
+                    margin: 0 auto;
+                    width: 450px;
+                }
+                
+            }
+            .informacion{
+                display: grid;
+                margin-top: 50px;
+                
+
+                .info-gg{
+                    margin: auto;
+                    display:flex;
+                    margin-bottom: 60px;  
+                    width: auto;
+                    padding: 40px;
+                    border-radius: 12px;
+                    box-shadow: 0 5px 10px rgb(105, 105, 107);
+                    figure{
+                        margin: 20px 50px;
+                        img{
+                            height: auto;
+                        }
+                    }              
+                    .caja{
+                        display: grid;
+                        align-items: center;
+                        justify-content: center;
+                        .especialidad{
+                            margin: auto;
+                            .text{
+                                font-size: 18px;
+                                line-height: 35px;
+                                .ic{
+                                    color: rgb(8, 8, 141);
+                                }
+                            }
+                            li{
+                                margin-top: 15px  ;
+                                line-height: 30px;
+                                font-size: 18px;
+                                ul{
+                                    .icon{
+                                        color: red;
+                                        padding-right: 15px ;
+                                    }
+                                }
+                            }
+                        }
+                    }
+            }
+        }
+        }
+        .logros{
+            h2,p{
+                text-align: center;
+                margin: 25px 0;
+            }
+            .cards{
+                margin: 50px 100px;
+                .images{
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit,minmax(428px,1fr));
+                    .face{
+                        margin: 0px 15px 20px 15px;
+                        position: relative;
+                        text-align: center;
+                        justify-content: center;
+                        transition: all 0.5s ease;
+                        border-radius: 10px;
+                        box-shadow: 0 5px 10px rgb(95, 94, 94);
+                        
+                        
+                        img{
+                            width: 100%;
+                            border-radius: 10px;
+                            cursor: pointer;
+                            border: 2px groove rgb(105, 105, 107);
+                        }
+                    &:hover{
+                        transform: scale(1.2) ;
+                        z-index: 9;
+                        img{
+                            z-index: -55;
+                        }
+                        &::before{
+                            content: var(--content);
+                            position: absolute;
+                            font-weight: bold;
+                            top: 85%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                            color: white;
+                            background: rgb(57, 43, 247);
+                            padding: 0 25px;
+                            font-size: 12px;
+                            border-radius: 15px;
+                            
+                        }
+                    }
+                    }
+                }
+            }
+        }
+        .projects{
+            h2,p{
+                text-align: center;
+                margin: 25px 0;
+            }
+            .cards{
+                margin: 50px 100px;
+                transition: all 0.5s ease;
+                .images{
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit,minmax(428px,1fr));
+                    .face{
+                        margin: 0px 15px 20px 15px;
+                        position: relative;
+                        text-align: center;
+                        justify-content: center;
+                        transition: all 0.5s ease;
+                        border-radius: 10px;
+                        box-shadow: 0 5px 10px rgb(95, 94, 94);
+                        
+                        
+                        img{
+                            width: 100%;
+                            border-radius: 10px;
+                            cursor: pointer;
+                            border: 2px groove rgb(105, 105, 107);
+                        }
+                    &:hover{
+                        transform: scale(1.2) ;
+                        z-index: 9;
+                        img{
+                            z-index: -55;
+                        }
+                        &::before{
+                            content: var(--content);
+                            position: absolute;
+                            font-weight: bold;
+                            top: 85%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                            color: white;
+                            background: rgb(57, 43, 247);
+                            padding: 0 25px;
+                            font-size: 12px;
+                            border-radius: 15px;
+                            
+                        }
+                    }
+                    }
+                }
+            }
+        }
+    }
+ }
+
+ @media screen and (max-width: 768px) {
+    main{
+        .main-content{
+            .perfil{
+                .informacion{
+                    .info-gg{
+                        flex-direction: column;
+                    }
+                }
+            }
+            .logros{
+                .cards{
+                    margin: 50px 30px;
+            }
+        }
+    }
+ }
+}
