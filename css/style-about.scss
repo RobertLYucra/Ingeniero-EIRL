@@ -73,6 +73,8 @@ a {
                 transition: all 0.5s ease;
                 border-radius: 15px;
                 background:rgb(233, 232, 235);
+                height: 320px;
+                width: 380px;
                 
                 ion-icon{
                     margin-top: 20px;
@@ -104,6 +106,34 @@ a {
         }
     }
 }
+@media screen and (max-width: 1460px) {
+    .main{
+        .about-plus{
+            transition: all 0.5s ease;
+            margin: 0 80px 20px 80px;
+            .text{
+                figure{
+                    height: 320px;
+                    width: 480px;  
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1077px) {
+    .main{
+        .about-plus{
+            transition: all 0.5s ease;
+            margin: 0 80px 20px 80px;
+            .text{
+                figure{
+                    height: 360px;
+                    width: 520px;  
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 1304px) {
     .main{
         .content-about{
@@ -112,7 +142,7 @@ a {
         }
         .about-plus{
             transition: all 0.5s ease;
-            margin: 0 80px 20px 80px;
+            margin: 0 60px 20px 60px;
         }
     }
 }
@@ -122,6 +152,9 @@ a {
             transition: all 0.5s ease;
             .text{
                 flex-direction: column;
+                figure{
+                    height: 270px;
+                }
             }
         
         }

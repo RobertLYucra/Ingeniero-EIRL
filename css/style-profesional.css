@@ -22,9 +22,13 @@ main .main-content .perfil .title {
   line-height: 25px;
 }
 main .main-content .perfil .title p {
-  border-bottom: 1px solid red;
+  border-bottom: 2px solid red;
   margin: 0 auto;
   width: 450px;
+  font-weight: bold;
+}
+main .main-content .perfil .title .name {
+  color: rgb(4, 4, 175);
 }
 main .main-content .perfil .informacion {
   display: grid;
@@ -43,7 +47,15 @@ main .main-content .perfil .informacion .info-gg figure {
   margin: 20px 50px;
 }
 main .main-content .perfil .informacion .info-gg figure img {
-  height: auto;
+  height: 250px;
+  border-radius: 15px;
+  box-shadow: 0 5px 5px rgb(95, 94, 94);
+  transition: all 0.8s ease;
+}
+main .main-content .perfil .informacion .info-gg figure .info {
+  margin-top: 25px;
+  border-left: 3px solid red;
+  padding-left: 25px;
 }
 main .main-content .perfil .informacion .info-gg .caja {
   display: grid;
@@ -54,7 +66,7 @@ main .main-content .perfil .informacion .info-gg .caja .especialidad {
   margin: auto;
 }
 main .main-content .perfil .informacion .info-gg .caja .especialidad .text {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 35px;
 }
 main .main-content .perfil .informacion .info-gg .caja .especialidad .text .ic {
@@ -63,7 +75,7 @@ main .main-content .perfil .informacion .info-gg .caja .especialidad .text .ic {
 main .main-content .perfil .informacion .info-gg .caja .especialidad li {
   margin-top: 15px;
   line-height: 30px;
-  font-size: 18px;
+  font-size: 17px;
 }
 main .main-content .perfil .informacion .info-gg .caja .especialidad li ul .icon {
   color: red;
@@ -163,9 +175,27 @@ main .main-content .projects .cards .images .face:hover::before {
   border-radius: 15px;
 }
 
+@media screen and (max-width: 870px) {
+  main .main-content .perfil .informacion .info-gg figure img {
+    width: auto;
+  }
+  main .main-content .perfil .informacion .info-gg .caja .especialidad p {
+    font-size: 1px;
+  }
+}
 @media screen and (max-width: 768px) {
   main .main-content .perfil .informacion .info-gg {
     flex-direction: column;
+    display: grid;
+  }
+  main .main-content .perfil .informacion .info-gg figure {
+    margin: auto auto 25px auto;
+  }
+  main .main-content .perfil .informacion .info-gg figure img {
+    margin: 15px 20px;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease;
   }
   main .main-content .logros .cards {
     margin: 50px 30px;

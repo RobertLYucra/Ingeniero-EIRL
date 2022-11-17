@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:600,700|Quicksand:300,400|Yeon+Sung&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .contac-main {
+  margin-top: 8%;
+}
+.main .contac-main h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.main .contac-main .titulo {
+  margin-bottom: 40px;
+  color: #b32727;
+  font-size: 40px;
+  display: grid;
+  font-weight: bold;
+}
+.main .contac-main .titulo::after {
+  content: "";
+  border-bottom: #b32727 2px solid;
+  margin-top: 8px;
+  width: 300px;
+}
+.main .contac-main .contact {
+  margin: auto;
+  display: flex;
+}
+.main .contac-main .contact .info {
+  display: grid;
+  background: rgb(1, 1, 105);
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.main .contac-main .contact .info .info2 {
+  margin: auto;
+  margin-right: 50px;
+  margin-left: 50px;
+  color: white;
+}
+.main .contac-main .contact .info .info2 p {
+  margin: 25px 0;
+}
+.main .contac-main .contact .info .info2 ion-icon {
+  margin-right: 10px;
+}
+.main .contac-main .contact .form {
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  background: rgb(221, 216, 216);
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 700px;
+}
+.main .contac-main .contact .form h2 {
+  margin: 25px auto;
+  color: rgb(1, 1, 105);
+  font-weight: bold;
+}
+.main .contac-main .contact .form .form-form {
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.main .contac-main .contact .form .form-form form {
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+}
+.main .contac-main .contact .form .form-form form .entrada {
+  width: 80%;
+  height: 40px;
+  margin: 10px 0;
+  font-size: 17px;
+  border-radius: 5px;
+  border: none;
+}
+.main .contac-main .contact .form .form-form form .coment {
+  height: auto;
+}
+.main .contac-main .contact .form .form-form form .btn {
+  width: 150px;
+  margin: 10px 0;
+  padding: 15px 25px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 15px;
+  border: 2px solid #b32727;
+  background: white;
+  color: #b32727;
+  font-weight: bolder;
+}
+.main .contac-main .contact .form .form-form form .btn:hover {
+  background: #b32727;
+  color: white;
+}
+
+.redes-sociales {
+  display: grid;
+}
+.redes-sociales .main-redes-sociales {
+  margin: auto;
+  display: flex;
+  margin-top: 45px;
+}
+.redes-sociales .main-redes-sociales .rs-tipo ion-icon {
+  font-size: 1.75em;
+  padding: 25px;
+  color: aliceblue;
+}
+.redes-sociales .main-redes-sociales .youtube {
+  background: red;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.redes-sociales .main-redes-sociales .facebook {
+  background-color: blue;
+}
+.redes-sociales .main-redes-sociales .whatsapp {
+  background: green;
+}
+.redes-sociales .main-redes-sociales .instagram {
+  background: rgb(235, 13, 135);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.redes-sociales .main-redes-sociales .linkedin {
+  background: rgb(74, 123, 228);
+}
+
+@media screen and (max-width: 1040px) {
+  .main .contac-main {
+    margin-top: 110px;
+    transition: all 0.5s ease;
+  }
+  .main .contac-main .contact {
+    flex-direction: column;
+  }
+  .main .contac-main .contact .info {
+    height: 200px;
+    text-align: center;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 15px;
+  }
+  .main .contac-main .contact .form {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 0;
+  }
+}
+@media screen and (max-width: 722px) {
+  .main .contac-main {
+    margin-top: 110px;
+    transition: all 0.5s ease;
+  }
+  .main .contac-main .contact {
+    flex-direction: column;
+  }
+  .main .contac-main .contact .info {
+    height: 200px;
+    text-align: center;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 15px;
+  }
+  .main .contac-main .contact .form {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 0;
+    margin: auto;
+  }
+}/*# sourceMappingURL=style-contacts.css.map */

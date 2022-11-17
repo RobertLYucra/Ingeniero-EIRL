@@ -154,6 +154,15 @@ main .container .main-redes-sociales .facebook:hover {
   background: #3862eb;
 }
 
+main .container .main-redes-sociales .linkedin {
+  background: rgb(74, 123, 228);
+  transition: all ease-in 0.5s;
+}
+
+main .container .main-redes-sociales .linkedin:hover {
+  background: #3862eb;
+}
+
 main .container .main-redes-sociales .whatsapp {
   background: #068601;
   transition: all ease-in 0.5s;
@@ -227,10 +236,10 @@ main .container .main-redes-sociales .instagram:hover {
   text-align: center;
 }
 .main-main .main .title .quienes h1 {
+  color: rgb(4, 4, 175);
   display: block;
   padding-bottom: 5px;
   margin-bottom: 25px;
-  border-bottom: 2px solid blue;
 }
 .main-main .main .contac-main {
   display: grid;
@@ -246,7 +255,7 @@ main .container .main-redes-sociales .instagram:hover {
 }
 .main-main .main .contac-main .contact .info {
   display: grid;
-  background: rgb(1, 1, 105);
+  background: rgb(182, 38, 38);
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
 }
@@ -260,13 +269,17 @@ main .container .main-redes-sociales .instagram:hover {
   margin-right: 10px;
 }
 .main-main .main .contac-main .contact .form {
-  background: red;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  background: rgb(221, 216, 216);
   flex-wrap: wrap;
   flex-direction: row;
   width: 700px;
 }
 .main-main .main .contac-main .contact .form h2 {
   margin: 25px auto;
+  color: rgb(1, 1, 105);
+  font-weight: bold;
 }
 .main-main .main .contac-main .contact .form .form-form {
   flex-wrap: wrap;
@@ -287,12 +300,23 @@ main .container .main-redes-sociales .instagram:hover {
 }
 .main-main .main .contac-main .contact .form .form-form form .coment {
   height: auto;
+  resize: none;
 }
 .main-main .main .contac-main .contact .form .form-form form .btn {
   width: 150px;
   margin: 10px 0;
-  padding: 15px 30px;
+  padding: 15px 25px;
   cursor: pointer;
+  border-radius: 10px;
+  font-size: 15px;
+  border: 2px solid #b32727;
+  background: white;
+  color: #b32727;
+  font-weight: bolder;
+}
+.main-main .main .contac-main .contact .form .form-form form .btn:hover {
+  background: #b32727;
+  color: white;
 }
 
 @media screen and (max-width: 1360px) {

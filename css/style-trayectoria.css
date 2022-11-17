@@ -22,14 +22,40 @@ main .content-info {
   width: 950px;
   margin: auto;
   text-align: center;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgb(105, 105, 107);
+}
+main .content-info .line {
+  display: grid;
+  margin-bottom: 25px;
+}
+main .content-info .line .line2 {
+  margin: auto;
+  width: 370px;
+  height: 3px;
+  border-bottom: 3px solid rgb(4, 4, 175);
+  border-radius: 12px;
+}
+main .content-info h1 {
+  color: rgb(4, 4, 175);
+  margin-bottom: 0;
+  display: grid;
+  font-weight: bold;
+  text-align: center;
 }
 main .content-info span {
+  margin-top: 50px;
   font-family: "Poppins", sans-serif;
   text-align: justify;
+  font-size: 17px;
 }
 main .projects h2, main .projects p {
   text-align: center;
   margin: 25px 0;
+}
+main .projects h2 {
+  color: red;
 }
 main .projects .cards {
   margin: 50px 150px;

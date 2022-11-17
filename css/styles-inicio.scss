@@ -105,6 +105,11 @@ main {
         transition: all ease-in .5s; }
         main .container .main-redes-sociales .facebook:hover {
           background: #3862eb; }
+          main .container .main-redes-sociales .linkedin {
+            background: rgb(74, 123, 228);
+            transition: all ease-in .5s; }
+            main .container .main-redes-sociales .linkedin:hover {
+              background: #3862eb; }
       main .container .main-redes-sociales .whatsapp {
         background: #068601;
         transition: all ease-in .5s; }
@@ -159,10 +164,10 @@ main {
           align-items: center;
           text-align: center;
           h1{
+            color: rgb(4, 4, 175) ;
             display: block;
             padding-bottom: 5px;
             margin-bottom: 25px;
-            border-bottom: 2px solid blue;
           }
         }
       }
@@ -180,7 +185,7 @@ main {
           .info{
             display: grid;
             
-            background: rgb(1, 1, 105);
+            background: rgb(182, 38, 38);
             border-bottom-left-radius: 15px;
             border-top-left-radius: 15px;
             .info2{
@@ -194,12 +199,16 @@ main {
             }
           }
           .form{
-           background: red;
+            border-bottom-right-radius: 15px ;
+            border-top-right-radius: 15px ;
+           background: rgb(221, 216, 216);
            flex-wrap: wrap;
             flex-direction: row;
             width: 700px;
             h2{
               margin: 25px auto;
+              color: rgb(1, 1, 105);
+              font-weight: bold;
             }
            
            .form-form{
@@ -220,12 +229,23 @@ main {
               }
               .coment{
                 height: auto;
+                resize:none;
               }
               .btn{
                 width: 150px;
                 margin: 10px 0;
-                padding: 15px 30px;
+                padding: 15px 25px;
                 cursor: pointer;
+                border-radius: 10px;
+                font-size: 15px;
+                border: 2px solid #b32727;
+                background: white;
+                color: #b32727;
+                font-weight: bolder;
+                &:hover{
+                  background: #b32727;
+                  color: white;
+                }
               }
             }
            }
