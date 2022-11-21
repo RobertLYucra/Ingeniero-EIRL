@@ -106,7 +106,7 @@ a {
   box-shadow: 0px 10px 20px 2px rgba(4, 1, 17, 0.7);
 }
 .main .about-plus .text .valor {
-  width: 110%;
+  width: 100%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -136,9 +136,5 @@ a {
     transition: all 0.5s ease;
     margin: 0 40px 20px 40px;
     padding: 0;
-  }
-  .main .about-plus .text .valor {
-    max-width: 450px;
-    margin: 0 18px 20px 18px;
   }
 }/*# sourceMappingURL=style-about.css.map */
