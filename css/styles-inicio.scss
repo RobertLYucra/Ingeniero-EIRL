@@ -177,7 +177,9 @@ main {
       .contac-main{
         display: grid;
         margin-bottom: 50px;
+        transition: all 0.5s ease;
         h2{
+          margin: auto;
           text-align: center;
           margin-bottom: 20px;
           color: rgb(4, 4, 175) ;
@@ -205,10 +207,11 @@ main {
           .form{
             border-bottom-right-radius: 15px ;
             border-top-right-radius: 15px ;
-           background: rgb(221, 216, 216);
-           flex-wrap: wrap;
+            background: rgb(221, 216, 216);
+            flex-wrap: wrap;
             flex-direction: row;
-            width: 700px;
+            max-width: 700px;
+            transition: all 0.5s ease;
             h2{
               margin: 25px auto;
               color: rgb(1, 1, 105);
@@ -278,9 +281,16 @@ main {
         .contac-main{
           .contact{
             flex-direction: column;
+            transition: all 0.5s ease; 
             .info{
               height: 200px;
               text-align: center;
+              border-bottom-left-radius: 0;
+              border-top-right-radius: 15px;
+            }
+            .form{
+              border-bottom-left-radius: 15px;
+              border-top-right-radius: 0;
             }
           }
         }
@@ -298,15 +308,15 @@ main {
           }
         }
         .contac-main{
+          margin: 10px 10px;
           .contact{
             flex-direction: column;
             .info{
               height: 200px;
               text-align: center;
+              display: grid;
               .info2{
-                .entrada{
-                  width: 60%;
-                }
+                margin: auto;
               }
             }
           }

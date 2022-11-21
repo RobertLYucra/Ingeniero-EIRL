@@ -246,8 +246,10 @@ main .container .main-redes-sociales .instagram:hover {
 .main-main .main .contac-main {
   display: grid;
   margin-bottom: 50px;
+  transition: all 0.5s ease;
 }
 .main-main .main .contac-main h2 {
+  margin: auto;
   text-align: center;
   margin-bottom: 20px;
   color: rgb(4, 4, 175);
@@ -277,7 +279,8 @@ main .container .main-redes-sociales .instagram:hover {
   background: rgb(221, 216, 216);
   flex-wrap: wrap;
   flex-direction: row;
-  width: 700px;
+  max-width: 700px;
+  transition: all 0.5s ease;
 }
 .main-main .main .contac-main .contact .form h2 {
   margin: 25px auto;
@@ -333,10 +336,17 @@ main .container .main-redes-sociales .instagram:hover {
   }
   .main-main .main .contac-main .contact {
     flex-direction: column;
+    transition: all 0.5s ease;
   }
   .main-main .main .contac-main .contact .info {
     height: 200px;
     text-align: center;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 15px;
+  }
+  .main-main .main .contac-main .contact .form {
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 0;
   }
 }
 @media screen and (max-width: 768px) {
@@ -346,15 +356,19 @@ main .container .main-redes-sociales .instagram:hover {
   .main-main .main .title p {
     text-align: justify;
   }
+  .main-main .main .contac-main {
+    margin: 10px 10px;
+  }
   .main-main .main .contac-main .contact {
     flex-direction: column;
   }
   .main-main .main .contac-main .contact .info {
     height: 200px;
     text-align: center;
+    display: grid;
   }
-  .main-main .main .contac-main .contact .info .info2 .entrada {
-    width: 60%;
+  .main-main .main .contac-main .contact .info .info2 {
+    margin: auto;
   }
 }
 @media screen and (max-width: 560px) {
