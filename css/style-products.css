@@ -155,4 +155,9 @@ main .content-main .elements .product-cards .second .text p {
   main .content-main .elements .product-cards .second img {
     margin: 10px 20px 10px 20px;
   }
+}
+@media screen and (max-width: 435px) {
+  main .content-main .elements .product-cards .cards img {
+    width: 350px;
+  }
 }/*# sourceMappingURL=style-products.css.map */

@@ -246,3 +246,19 @@ main{
         }
     }
 }
+@media screen and (max-width: 435px) {
+    main{
+        .content-main{
+            .elements{
+                .product-cards{
+                    .cards{
+                        img{
+                            width: 350px;
+                        }
+                    }
+                
+                }
+            }
+        }
+    }
+}
