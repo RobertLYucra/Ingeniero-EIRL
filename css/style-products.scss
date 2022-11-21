@@ -207,7 +207,7 @@ main{
                 .product-cards{
                     .cards{
                         img{
-                            width: 400px;
+                            max-width: 400px;
                         }
                     }
                 
@@ -228,12 +228,16 @@ main{
                         align-items: center;
                         img{
                             margin-bottom: 25px;
+                            margin: auto;
                         }
                     }
                     .second{
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
+                        img{
+                            margin: auto;
+                        }
                     
                     }
                 

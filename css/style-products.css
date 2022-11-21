@@ -135,7 +135,7 @@ main .content-main .elements .product-cards .second .text p {
     margin: 25px 20px 25px 20px;
   }
   main .content-main .elements .product-cards .cards img {
-    width: 400px;
+    max-width: 400px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -146,10 +146,14 @@ main .content-main .elements .product-cards .second .text p {
   }
   main .content-main .elements .product-cards .cards img {
     margin-bottom: 25px;
+    margin: auto;
   }
   main .content-main .elements .product-cards .second {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  main .content-main .elements .product-cards .second img {
+    margin: auto;
   }
 }/*# sourceMappingURL=style-products.css.map */
