@@ -52,10 +52,10 @@ main{
                             margin-bottom: 25px;
                         }
                         p{
-                            margin: 5px 15px 20px 0 ;
+                            margin: 5px 15px 40px 0 ;
                         }
                         a{
-                            padding: 2px 25px;
+                            padding: 10px 30px;
                             color: red;
                             border: 1.5px outset red;
                             border-radius: 10px;
@@ -64,7 +64,6 @@ main{
                             &:hover{
                                 background: red;
                                 color: white;
-                                padding: 4px 30px;
                             }
                         }
                         
@@ -80,7 +79,7 @@ main{
                     }
                     .text{
                         p{
-                            margin: 5px 0 20px 15px ;
+                            margin: 5px 0 45px 15px ;
                         }
                     }
                 }

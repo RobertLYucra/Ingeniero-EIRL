@@ -17,47 +17,52 @@
         display: grid;
     }
     .content-info{
-        width: 950px;
+        max-width: 950px;
         margin: auto;
         text-align: center;
-        padding: 25px;
+        padding: 80px;
         border-radius: 12px;
         box-shadow: 0 5px 15px rgb(105, 105, 107);
-        .line{
-            display: grid;
-            margin-bottom: 25px;
-
-            .line2{
-                margin: auto;
-                width: 370px;
-                height: 3px;  
-                border-bottom:3px solid rgb(4, 4, 175) ;;
-                border-radius: 12px;
-            }
-        }
+        display: grid;
         h1{
-            color: rgb(4, 4, 175) ;
-            margin-bottom: 0;
+            margin: auto;
+            color: rgb(12, 5, 114) ;
             display: grid;
             font-weight: bold;
             text-align: center;
+            border-bottom: 2px solid blue;
+            border-radius: 10px;
+            padding: 0 25px;
             
         }
         span{
             margin-top: 50px;
             font-family: 'Poppins', sans-serif;
-            text-align: justify;
+            text-align: center;
             font-size: 17px;
             
         }
     }
     .projects{
+        display: grid;
+
+        .subtitulo{
+            margin: auto;
+
+        }
         h2,p{
             text-align: center;
-            margin: 25px 0;
         }
         h2{
+            margin-top: 50px;
             color: red;
+        }
+        p{
+            max-width: 100%;
+            border-bottom: 2px solid red;
+            border-radius: 10px;
+            font-weight: bold;
+            padding: 0;
         }
         .cards{
             margin: 50px 150px;
@@ -79,7 +84,6 @@
                         width: 100%;
                         border-radius: 10px;
                         cursor: pointer;
-                        border: 2px groove rgb(105, 105, 107);
                     }
                 &:hover{
                     transform: scale(1.2) ;
@@ -107,20 +111,14 @@
         }
     }
 }
-@media screen and (max-width: 1000px) {
-    main{
-        .content-info-main{
-            .content-info{
-                width: auto;
-                margin: auto 60px;
-            }
-        }
-    }
-}
+
 
 @media screen and (max-width: 768px) {
     main{
         .main-content{
+            .content-info{
+                padding: 30px;
+            }
             .projects{
                 .cards{
                     margin: 50px 30px;
@@ -129,6 +127,8 @@
         }
     }
 }
+
+
 
 
 

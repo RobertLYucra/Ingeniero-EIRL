@@ -51,15 +51,17 @@ main {
           color: red;
           font-size: 70px;
           height: auto;
+          transition: all 0.5s ease;
+          margin-bottom: 25px;
         } }
 
       main .container .main-texto span {
         position: absolute;
-        padding-top: 10px;
         margin-left: auto;
         margin-top: 0px;
         width: 100%;
         left: 0; 
+        
       }
       main .container .main-texto span h3{
         font-size: 25px;
@@ -67,6 +69,7 @@ main {
         padding: 5px;
         color: white;
         border-radius: 10px;
+        min-height: 60px;
       }
     main .container .main-redes-sociales {
       display: flex; }
@@ -177,6 +180,7 @@ main {
         h2{
           text-align: center;
           margin-bottom: 20px;
+          color: rgb(4, 4, 175) ;
         }
         .contact{
           margin: auto;

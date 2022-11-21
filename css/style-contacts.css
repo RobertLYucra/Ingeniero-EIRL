@@ -42,7 +42,7 @@ body {
 }
 .main .contac-main .contact .info {
   display: grid;
-  background: rgb(1, 1, 105);
+  background: #b32727;
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
 }
@@ -110,11 +110,13 @@ body {
 
 .redes-sociales {
   display: grid;
+  margin-bottom: 25px;
 }
 .redes-sociales .main-redes-sociales {
   margin: auto;
   display: flex;
-  margin-top: 45px;
+  margin-top: 30px;
+  margin-bottom: 0px;
 }
 .redes-sociales .main-redes-sociales .rs-tipo ion-icon {
   font-size: 1.75em;
