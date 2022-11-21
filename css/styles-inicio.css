@@ -356,4 +356,13 @@ main .container .main-redes-sociales .instagram:hover {
   .main-main .main .contac-main .contact .info .info2 .entrada {
     width: 60%;
   }
+}
+@media screen and (max-width: 560px) {
+  main .container .main-texto h1 {
+    line-height: 55px;
+  }
+  main .container .main-texto h1.titulo {
+    font-size: 45px;
+    margin-bottom: 10px;
+  }
 }/*# sourceMappingURL=styles-inicio.css.map */

@@ -288,6 +288,7 @@ main {
     }
   }
   @media screen and (max-width: 768px) {
+
     .main-main{
       .main{
         .title{
@@ -312,6 +313,14 @@ main {
         }
       }}
   }
-
+  
+  @media screen and (max-width:560px){
+    main .container .main-texto h1 {
+      line-height: 55px;
+      &.titulo{ 
+        font-size: 45px;
+        margin-bottom: 10px;
+      } }
+  }
 
 
