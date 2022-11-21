@@ -28,11 +28,13 @@ a {
   text-align: center;
   width: 100%;
   font-family: "Poppins", sans-serif;
+  display: grid;
 }
 .main .content-about {
+  margin: auto;
+  max-width: 860px;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 300px 0;
   border: 1px solid blue;
   border-style: none;
   padding: 50px;
@@ -46,6 +48,7 @@ a {
   margin-bottom: 15px;
   margin-top: 15px;
   text-transform: uppercase;
+  transition: 0.5s ease;
 }
 .main .content-about .text-about p {
   text-align: justify;
@@ -57,22 +60,25 @@ a {
   font-weight: bold;
 }
 .main .about-plus {
-  margin: 0 250px 20px 250px;
   flex-wrap: wrap;
+  display: grid;
+  margin-bottom: 50px;
 }
 .main .about-plus .text {
   justify-content: center;
   align-items: center;
   display: flex;
+  margin: auto;
+  max-width: 1100px;
+  gap: 40px;
 }
 .main .about-plus .text figure {
   box-shadow: 0px 5px 10px 0px rgba(2, 3, 102, 0.5);
-  margin: 20px 25px 20px 25px;
   transition: all 0.5s ease;
   border-radius: 15px;
   background: rgb(233, 232, 235);
   height: 320px;
-  width: 380px;
+  max-width: 380px;
 }
 .main .about-plus .text figure ion-icon {
   margin-top: 20px;
@@ -99,37 +105,10 @@ a {
   transform: scale(1.03);
   box-shadow: 0px 10px 20px 2px rgba(4, 1, 17, 0.7);
 }
+.main .about-plus .text .valor {
+  width: 110%;
+}
 
-@media screen and (max-width: 1460px) {
-  .main .about-plus {
-    transition: all 0.5s ease;
-    margin: 0 80px 20px 80px;
-  }
-  .main .about-plus .text figure {
-    height: 320px;
-    width: 480px;
-  }
-}
-@media screen and (max-width: 1077px) {
-  .main .about-plus {
-    transition: all 0.5s ease;
-    margin: 0 80px 20px 80px;
-  }
-  .main .about-plus .text figure {
-    height: 360px;
-    width: 520px;
-  }
-}
-@media screen and (max-width: 1304px) {
-  .main .content-about {
-    transition: all 0.5s ease;
-    margin: 0 100px 20px 100px;
-  }
-  .main .about-plus {
-    transition: all 0.5s ease;
-    margin: 0 60px 20px 60px;
-  }
-}
 @media screen and (max-width: 1000px) {
   .main .about-plus {
     transition: all 0.5s ease;
@@ -138,17 +117,28 @@ a {
     flex-direction: column;
   }
   .main .about-plus .text figure {
-    height: 270px;
+    min-height: 270px;
+    max-width: 560px;
   }
 }
 @media screen and (max-width: 768px) {
   .main .content-about {
     transition: all 0.5s ease;
-    margin: 0 10px 20px 10px;
+    margin: 0 12px 20px 12px;
+  }
+  .main .content-about img {
+    max-width: 100%;
+  }
+  .main .content-about .text-about .title {
+    font-size: 25px;
   }
   .main .about-plus {
     transition: all 0.5s ease;
-    margin: 0 11px 20px 1px;
+    margin: 0 40px 20px 40px;
     padding: 0;
+  }
+  .main .about-plus .text .valor {
+    max-width: 450px;
+    margin: 0 18px 20px 18px;
   }
 }/*# sourceMappingURL=style-about.css.map */
