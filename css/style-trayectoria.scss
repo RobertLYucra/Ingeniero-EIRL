@@ -165,6 +165,13 @@
                             img{
                                 width: 320px;
                             }
+                            &:hover{
+                                &::before{
+                                    content: var(--content);
+                                    font-size: 8px;
+                                    
+                                }
+                            }
                         }
                     }
                 }

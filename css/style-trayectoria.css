@@ -148,4 +148,8 @@ main .projects .cards .images .face:hover::before {
   main .main-content .projects .cards .images .face img {
     width: 320px;
   }
+  main .main-content .projects .cards .images .face:hover::before {
+    content: var(--content);
+    font-size: 8px;
+  }
 }/*# sourceMappingURL=style-trayectoria.css.map */
