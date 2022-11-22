@@ -49,6 +49,7 @@
 
         .subtitulo{
             margin: auto;
+            max-width: 350px;
 
         }
         h2,p{
@@ -145,10 +146,7 @@
             .projects{
                 .subtitulo{
                     transition:  .5s ease;
-                    max-width: 320px;
-                    p{
-                        max-width: 310px;
-                    }
+                    
                 }
                 .cards{
                     margin: 50px 30px;
@@ -164,10 +162,10 @@
                             margin-top: 30px;
                             img{
                                 width: 320px;
+                                height: auto;
                             }
                             &:hover{
                                 &::before{
-                                    content: var(--content);
                                     font-size: 8px;
                                     
                                 }
