@@ -47,6 +47,7 @@ main .main-content .perfil .informacion .info-gg {
 }
 main .main-content .perfil .informacion .info-gg figure {
   margin: 20px 50px;
+  display: grid;
 }
 main .main-content .perfil .informacion .info-gg figure img {
   height: 250px;
@@ -114,7 +115,7 @@ main .main-content .logros .cards .images .face {
   box-shadow: 0 5px 10px rgb(95, 94, 94);
 }
 main .main-content .logros .cards .images .face img {
-  width: 100%;
+  max-width: 100%;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -227,14 +228,28 @@ main .main-content .projects .cards .images .face:hover::before {
     margin: auto;
   }
   main .main-content .perfil .informacion .info-gg figure img {
-    width: 50px;
+    width: auto;
     margin: auto;
     transition: 0.5s ease;
   }
   main .main-content .projects .exp {
-    max-width: 400px;
+    max-width: 320px;
   }
   main .main-content .projects .exp p {
-    max-width: 390px;
+    max-width: 310px;
+  }
+  main .main-content .projects .cards {
+    margin: 50px 250px;
+  }
+  main .main-content .projects .cards .images {
+    display: grid;
+  }
+  main .main-content .projects .cards .images .face {
+    max-width: 360px;
+    margin: auto;
+    margin-top: 30px;
+  }
+  main .main-content .projects .cards .images .face img {
+    width: auto;
   }
 }/*# sourceMappingURL=style-profesional.css.map */

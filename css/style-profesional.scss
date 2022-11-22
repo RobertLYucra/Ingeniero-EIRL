@@ -49,6 +49,7 @@
                     box-shadow: 0 5px 10px rgb(105, 105, 107);
                     figure{
                         margin: 20px 50px;
+                        display: grid;
                         
                         img{
                             height: 250px;
@@ -122,7 +123,7 @@
                         
                         
                         img{
-                            width: 100%;
+                            max-width: 100%;
                             border-radius: 10px;
                             cursor: pointer;
                             
@@ -262,6 +263,7 @@
             .logros{
                 .cards{
                     margin: 50px 10px;
+                    
             }
             .projects{
                 .cards{
@@ -281,7 +283,7 @@
                         figure{
                             margin: auto;
                             img{
-                                width: 50px;
+                                width: auto;
                                 margin: auto;
                                 transition:  0.5s ease;
                                 
@@ -292,9 +294,23 @@
             }
             .projects{
                 .exp{
-                    max-width: 400px;
+                    max-width: 320px;
                     p{
-                        max-width: 390px;
+                        max-width: 310px;
+                    }
+                }
+                .cards{
+                    margin: 50px 250px;
+                    .images{
+                        display: grid;
+                        .face{
+                            max-width: 360px;
+                            margin: auto;
+                            margin-top: 30px;
+                            img{
+                                width: auto;
+                            }
+                        }
                     }
                 }
             }
