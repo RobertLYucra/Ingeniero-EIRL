@@ -223,7 +223,7 @@ main .main-content .projects .cards .images .face:hover::before {
     margin: 50px 10px;
   }
 }
-@media screen and (max-width: 768px) and (max-width: 474px) {
+@media screen and (max-width: 768px) and (max-width: 475px) {
   main .main-content .perfil .informacion .info-gg figure {
     margin: auto;
   }
@@ -237,9 +237,10 @@ main .main-content .projects .cards .images .face:hover::before {
   }
   main .main-content .logros .cards .images {
     display: grid;
+    margin: auto 10px;
   }
   main .main-content .logros .cards .images .face {
-    max-width: 360px;
+    max-width: 320px;
     margin: auto;
     margin-top: 30px;
   }
@@ -258,9 +259,11 @@ main .main-content .projects .cards .images .face:hover::before {
   }
   main .main-content .projects .cards .images {
     display: grid;
+    margin: auto 10px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
   main .main-content .projects .cards .images .face {
-    max-width: 360px;
+    max-width: 320px;
     margin: auto;
     margin-top: 30px;
   }
