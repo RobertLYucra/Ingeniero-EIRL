@@ -24,6 +24,7 @@
         border-radius: 12px;
         box-shadow: 0 5px 15px rgb(105, 105, 107);
         display: grid;
+        
         h1{
             margin: auto;
             color: rgb(12, 5, 114) ;
@@ -118,6 +119,11 @@
         .main-content{
             .content-info{
                 padding: 30px;
+                margin: auto 15px;
+                span{
+                    font-size: 15px;
+                    line-height: 1.5em;
+                }
             }
             .projects{
                 .cards{
@@ -127,6 +133,47 @@
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+    main{
+        .main-content{
+            .content-info-main{
+                .content-info{
+                    margin: auto 15px;
+                }
+            }
+            .projects{
+                .subtitulo{
+                    transition:  .5s ease;
+                    max-width: 320px;
+                    p{
+                        max-width: 310px;
+                    }
+                }
+                .cards{
+                    margin: 50px 30px;
+                    display: grid;
+                    .images{
+                        max-width: 320px;
+                        display: grid;
+                        margin:  auto;
+                        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+                        .face{
+                            max-width: 320px;
+                            margin: auto;
+                            margin-top: 30px;
+                            img{
+                                width: 320px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+
+        }
+    }
+ }
 
 
 
