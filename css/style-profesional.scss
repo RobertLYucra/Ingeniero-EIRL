@@ -292,8 +292,25 @@
                     }
                 }
             }
+            .logros{
+                .cards{
+                    margin: 50px 10px;
+                    .images{
+                        display: grid;
+                        .face{
+                            max-width: 360px;
+                            margin: auto;
+                            margin-top: 30px;
+                            img{
+                                width: auto;
+                            }
+                        }
+                    }
+                }
+            }
             .projects{
                 .exp{
+                    transition:  .5s ease;
                     max-width: 320px;
                     p{
                         max-width: 310px;

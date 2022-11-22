@@ -232,7 +232,22 @@ main .main-content .projects .cards .images .face:hover::before {
     margin: auto;
     transition: 0.5s ease;
   }
+  main .main-content .logros .cards {
+    margin: 50px 10px;
+  }
+  main .main-content .logros .cards .images {
+    display: grid;
+  }
+  main .main-content .logros .cards .images .face {
+    max-width: 360px;
+    margin: auto;
+    margin-top: 30px;
+  }
+  main .main-content .logros .cards .images .face img {
+    width: auto;
+  }
   main .main-content .projects .exp {
+    transition: 0.5s ease;
     max-width: 320px;
   }
   main .main-content .projects .exp p {
