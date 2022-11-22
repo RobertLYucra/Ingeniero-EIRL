@@ -48,6 +48,7 @@ main .projects {
 }
 main .projects .subtitulo {
   margin: auto;
+  max-width: 350px;
 }
 main .projects h2, main .projects p {
   text-align: center;
@@ -125,10 +126,6 @@ main .projects .cards .images .face:hover::before {
   }
   main .main-content .projects .subtitulo {
     transition: 0.5s ease;
-    max-width: 320px;
-  }
-  main .main-content .projects .subtitulo p {
-    max-width: 310px;
   }
   main .main-content .projects .cards {
     margin: 50px 30px;
@@ -147,9 +144,9 @@ main .projects .cards .images .face:hover::before {
   }
   main .main-content .projects .cards .images .face img {
     width: 320px;
+    height: auto;
   }
   main .main-content .projects .cards .images .face:hover::before {
-    content: var(--content);
     font-size: 8px;
   }
 }/*# sourceMappingURL=style-trayectoria.css.map */
