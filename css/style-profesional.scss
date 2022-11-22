@@ -21,11 +21,12 @@
                 align-items: center;
                 text-align: center;
                 line-height: 25px;
+                margin: auto 10px;
                 p{
                     border-bottom: 2px solid red ;
                     border-radius: 12px;
                     margin: 0 auto;
-                    width: 450px;
+                    max-width: 450px;
                     font-weight: bold;
                 }
                 .name{
@@ -39,10 +40,10 @@
                 
 
                 .info-gg{
-                    margin: auto;
+                    margin: auto 10px;
                     display:flex;
                     margin-bottom: 60px;  
-                    width: auto;
+                    max-width: auto;
                     padding: 40px;
                     border-radius: 12px;
                     box-shadow: 0 5px 10px rgb(105, 105, 107);
@@ -101,7 +102,7 @@
                 
             }
             .titulo-logro{
-                color: rgb(233, 8, 8);
+                color: red;
                 border-bottom: 2px solid red;
                 border-radius: 10px;
             }
@@ -153,17 +154,19 @@
         }
         .projects{
             display: grid;
-            h2,p{
-                text-align: center;
-                margin: auto;
-                font-weight: bold;
-            }
-            span{
-                margin: auto;
+            
+            .exp{
+                max-width: 450px;
                 border-bottom: 2px solid red;
-                border-radius: 10px;  
-                padding: 0 25px;
+                border-radius: 10px;
+                margin: auto;
+                h2,p{
+                    text-align: center;
+                    margin: auto;
+                    font-weight: bold;
+                }
             }
+            
             .cards{
                 margin: 50px 150px;
                 transition: all 0.5s ease;
@@ -181,7 +184,7 @@
                         
                         
                         img{
-                            width: 100%;
+                            max-width: 100%;
                             border-radius: 10px;
                             cursor: pointer;
                         }
@@ -246,11 +249,9 @@
                         flex-direction: column;
                         display: grid;
                         figure{
-                            margin: auto auto 25px auto;
+                            margin: auto;
                             img{
                                 margin: auto;
-                                width: 100%;
-                                height: 100%;
                                 transition:  0.5s ease;
                                 
                             }
@@ -260,9 +261,45 @@
             }
             .logros{
                 .cards{
-                    margin: 50px 30px;
+                    margin: 50px 10px;
+            }
+            .projects{
+                .cards{
+                    margin: 50px 10px;
             }
         }
     }
  }
 }
+
+@media screen and (max-width: 474px) {
+    main{
+        .main-content{
+            .perfil{
+                .informacion{
+                    .info-gg{
+                        figure{
+                            margin: auto;
+                            img{
+                                width: 50px;
+                                margin: auto;
+                                transition:  0.5s ease;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            .projects{
+                .exp{
+                    max-width: 400px;
+                    p{
+                        max-width: 390px;
+                    }
+                }
+            }
+            
+
+        }
+    }
+ }}

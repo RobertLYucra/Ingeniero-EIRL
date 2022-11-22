@@ -20,12 +20,13 @@ main .main-content .perfil .title {
   align-items: center;
   text-align: center;
   line-height: 25px;
+  margin: auto 10px;
 }
 main .main-content .perfil .title p {
   border-bottom: 2px solid red;
   border-radius: 12px;
   margin: 0 auto;
-  width: 450px;
+  max-width: 450px;
   font-weight: bold;
 }
 main .main-content .perfil .title .name {
@@ -36,10 +37,10 @@ main .main-content .perfil .informacion {
   margin-top: 50px;
 }
 main .main-content .perfil .informacion .info-gg {
-  margin: auto;
+  margin: auto 10px;
   display: flex;
   margin-bottom: 60px;
-  width: auto;
+  max-width: auto;
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 5px 10px rgb(105, 105, 107);
@@ -92,7 +93,7 @@ main .main-content .logros h2 {
   color: red;
 }
 main .main-content .logros .titulo-logro {
-  color: rgb(233, 8, 8);
+  color: red;
   border-bottom: 2px solid red;
   border-radius: 10px;
 }
@@ -140,16 +141,16 @@ main .main-content .logros .cards .images .face:hover::before {
 main .main-content .projects {
   display: grid;
 }
-main .main-content .projects h2, main .main-content .projects p {
+main .main-content .projects .exp {
+  max-width: 450px;
+  border-bottom: 2px solid red;
+  border-radius: 10px;
+  margin: auto;
+}
+main .main-content .projects .exp h2, main .main-content .projects .exp p {
   text-align: center;
   margin: auto;
   font-weight: bold;
-}
-main .main-content .projects span {
-  margin: auto;
-  border-bottom: 2px solid red;
-  border-radius: 10px;
-  padding: 0 25px;
 }
 main .main-content .projects .cards {
   margin: 50px 150px;
@@ -169,7 +170,7 @@ main .main-content .projects .cards .images .face {
   box-shadow: 0 5px 10px rgb(95, 94, 94);
 }
 main .main-content .projects .cards .images .face img {
-  width: 100%;
+  max-width: 100%;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -208,15 +209,32 @@ main .main-content .projects .cards .images .face:hover::before {
     display: grid;
   }
   main .main-content .perfil .informacion .info-gg figure {
-    margin: auto auto 25px auto;
+    margin: auto;
   }
   main .main-content .perfil .informacion .info-gg figure img {
     margin: auto;
-    width: 100%;
-    height: 100%;
     transition: 0.5s ease;
   }
   main .main-content .logros .cards {
-    margin: 50px 30px;
+    margin: 50px 10px;
+  }
+  main .main-content .logros .projects .cards {
+    margin: 50px 10px;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 474px) {
+  main .main-content .perfil .informacion .info-gg figure {
+    margin: auto;
+  }
+  main .main-content .perfil .informacion .info-gg figure img {
+    width: 50px;
+    margin: auto;
+    transition: 0.5s ease;
+  }
+  main .main-content .projects .exp {
+    max-width: 400px;
+  }
+  main .main-content .projects .exp p {
+    max-width: 390px;
   }
 }/*# sourceMappingURL=style-profesional.css.map */
