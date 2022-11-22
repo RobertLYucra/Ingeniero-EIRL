@@ -261,6 +261,7 @@ main .main-content .projects .cards .images .face:hover::before {
     display: grid;
   }
   main .main-content .projects .cards .images {
+    height: auto;
     max-width: 320px;
     display: grid;
     margin: auto;
@@ -268,6 +269,7 @@ main .main-content .projects .cards .images .face:hover::before {
   }
   main .main-content .projects .cards .images .face {
     max-width: 320px;
+    height: 230px;
     margin: auto;
     margin-top: 30px;
   }
@@ -275,6 +277,6 @@ main .main-content .projects .cards .images .face:hover::before {
     width: auto;
   }
   main .main-content .projects .cards .images .face:hover::before {
-    font-size: 7px;
+    font-size: 8px;
   }
 }/*# sourceMappingURL=style-profesional.css.map */

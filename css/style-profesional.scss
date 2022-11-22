@@ -310,6 +310,7 @@
                     margin: 50px 30px;
                     display: grid;
                     .images{
+                        height: auto;
                         max-width: 320px;
                         display: grid;
                         margin:  auto;
@@ -317,15 +318,17 @@
                         .face{
                             
                             max-width: 320px;
+                            height: 230px;
                             margin: auto;
                             margin-top: 30px;
                             img{
                                 width: auto;
+                                
                             }
                             &:hover{
                                 &::before{
                     
-                                    font-size: 7px;
+                                    font-size: 8px;
 
                                 }
                             }
