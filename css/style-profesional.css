@@ -223,7 +223,7 @@ main .main-content .projects .cards .images .face:hover::before {
     margin: 50px 10px;
   }
 }
-@media screen and (max-width: 768px) and (max-width: 475px) {
+@media screen and (max-width: 768px) and (max-width: 480px) {
   main .main-content .perfil .informacion .info-gg figure {
     margin: auto;
   }
@@ -232,12 +232,18 @@ main .main-content .projects .cards .images .face:hover::before {
     margin: auto;
     transition: 0.5s ease;
   }
+  main .main-content .logros {
+    margin: 0 0 0 0;
+  }
   main .main-content .logros .cards {
     margin: 50px 10px;
+    display: grid;
   }
   main .main-content .logros .cards .images {
+    max-width: 320px;
     display: grid;
-    margin: auto 10px;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
   main .main-content .logros .cards .images .face {
     max-width: 320px;
@@ -256,11 +262,13 @@ main .main-content .projects .cards .images .face:hover::before {
   }
   main .main-content .projects .cards {
     margin: 50px 30px;
+    display: grid;
   }
   main .main-content .projects .cards .images {
+    max-width: 320px;
     display: grid;
-    margin: auto 10px;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
   main .main-content .projects .cards .images .face {
     max-width: 320px;
