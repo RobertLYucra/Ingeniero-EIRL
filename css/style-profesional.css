@@ -274,4 +274,7 @@ main .main-content .projects .cards .images .face:hover::before {
   main .main-content .projects .cards .images .face img {
     width: auto;
   }
+  main .main-content .projects .cards .images .face:hover::before {
+    font-size: 7px;
+  }
 }/*# sourceMappingURL=style-profesional.css.map */
