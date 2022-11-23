@@ -109,18 +109,20 @@ main .main-content .logros .cards .images {
   grid-template-columns: repeat(auto-fit, minmax(428px, 1fr));
 }
 main .main-content .logros .cards .images .face {
-  margin: 0px 15px 20px 15px;
+  margin: auto;
   position: relative;
   text-align: center;
   justify-content: center;
   transition: all 0.5s ease;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgb(95, 94, 94);
+  max-width: 450px;
 }
 main .main-content .logros .cards .images .face img {
   max-width: 100%;
   border-radius: 10px;
   cursor: pointer;
+  margin-bottom: -10px;
 }
 main .main-content .logros .cards .images .face:hover {
   transform: scale(1.2);
@@ -269,7 +271,6 @@ main .main-content .projects .cards .images .face:hover::before {
   }
   main .main-content .projects .cards .images .face {
     max-width: 320px;
-    height: 230px;
     margin: auto;
     margin-top: 30px;
   }

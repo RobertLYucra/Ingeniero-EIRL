@@ -115,19 +115,20 @@
                     display: grid;
                     grid-template-columns: repeat(auto-fit,minmax(428px,1fr));
                     .face{
-                        margin: 0px 15px 20px 15px;
+                        margin: auto;
                         position: relative;
                         text-align: center;
                         justify-content: center;
                         transition: all 0.5s ease;
                         border-radius: 10px;
                         box-shadow: 0 5px 10px rgb(95, 94, 94);
-                        
+                        max-width: 450px;                     
                         
                         img{
                             max-width: 100%;
                             border-radius: 10px;
                             cursor: pointer;
+                            margin-bottom: -10px;
                             
                         }
                     &:hover{
@@ -318,7 +319,6 @@
                         .face{
                             
                             max-width: 320px;
-                            height: 230px;
                             margin: auto;
                             margin-top: 30px;
                             img{
