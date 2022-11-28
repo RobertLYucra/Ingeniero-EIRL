@@ -27,14 +27,14 @@ body {
 }
 .main .contac-main .titulo {
   margin-bottom: 40px;
-  color: #b32727;
+  color: rgb(235, 66, 66);
   font-size: 40px;
   display: grid;
   font-weight: bold;
 }
 .main .contac-main .titulo::after {
   content: "";
-  border-bottom: #b32727 2px solid;
+  border-bottom: rgb(235, 66, 66) 2px solid;
   margin-top: 8px;
   width: 300px;
 }
@@ -44,7 +44,7 @@ body {
 }
 .main .contac-main .contact .info {
   display: grid;
-  background: #b32727;
+  background: rgb(235, 66, 66);
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
 }
@@ -63,7 +63,7 @@ body {
 .main .contac-main .contact .form {
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
-  background: rgb(221, 216, 216);
+  background: rgb(231, 221, 221);
   flex-wrap: wrap;
   flex-direction: row;
   max-width: 700px;
@@ -100,13 +100,13 @@ body {
   cursor: pointer;
   border-radius: 10px;
   font-size: 15px;
-  border: 2px solid #b32727;
+  border: 2px solid rgb(235, 66, 66);
   background: white;
-  color: #b32727;
+  color: rgb(235, 66, 66);
   font-weight: bolder;
 }
 .main .contac-main .contact .form .form-form form .btn:hover {
-  background: #b32727;
+  background: rgb(235, 66, 66);
   color: white;
 }
 

@@ -99,8 +99,8 @@ main .container .main-redes-sociales .rs-tipo {
 main .container .main-redes-sociales .rs-tipo ion-icon {
   font-size: 20px;
   color: white;
-  -webkit-animation: agrandar 4s linear infinite;
-          animation: agrandar 4s linear infinite;
+  -webkit-animation: agrandar 5s linear infinite;
+          animation: agrandar 5s linear infinite;
 }
 
 @-webkit-keyframes agrandar {
@@ -260,7 +260,7 @@ main .container .main-redes-sociales .instagram:hover {
 }
 .main-main .main .contac-main .contact .info {
   display: grid;
-  background: rgb(182, 38, 38);
+  background: rgb(235, 66, 66);
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
 }
@@ -315,13 +315,13 @@ main .container .main-redes-sociales .instagram:hover {
   cursor: pointer;
   border-radius: 10px;
   font-size: 15px;
-  border: 2px solid #b32727;
+  border: 2px solid rgb(235, 66, 66);
   background: white;
-  color: #b32727;
+  color: rgb(235, 66, 66);
   font-weight: bolder;
 }
 .main-main .main .contac-main .contact .form .form-form form .btn:hover {
-  background: #b32727;
+  background: rgb(235, 66, 66);
   color: white;
 }
 
