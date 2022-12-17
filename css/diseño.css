@@ -127,7 +127,7 @@ body {
     font-size: 10px;
   }
   .container .slider-container .wrapper {
-    height: 280px;
+    max-height: 280px;
   }
   .container .slider-container .carousel img {
     width: 100%;
