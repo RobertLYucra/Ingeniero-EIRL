@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/diseño.css">
     <link rel="shortcut icon" href="/images/icon.png">
     <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
     <!-- HEADER -->
@@ -51,53 +52,23 @@
     </header>
     <div class="container">
         <h1 class="titulo"> DISEÑOS</h1>
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="image__wrapper">
-                        <img src="/images/diseño/Foto (1).JPG" alt="" />
-                    </div>
+        <div class="slider-container">
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <div class="carousel">
+                  <img src="/images/diseño/Foto (1).JPG" alt="img" draggable="false">
+                  <img src="/images/diseño/Foto (2).JPG" alt="img" draggable="false">
+                  <img src="/images/diseño/Foto (3).JPG" alt="img" draggable="false">
+                  <img src="/images/diseño/Foto (4).JPG" alt="img" draggable="false">
+                  <img src="/images/diseño/Foto (5).JPG" alt="img" draggable="false">
+                  <img src="/images/diseño/Foto (6).JPG" alt="img" draggable="false">
                 </div>
-
-                <div class="swiper-slide">
-                    <div class="image__wrapper">
-                        <img src="/images/diseño/Foto (2).JPG" alt="" />
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="image__wrapper">
-                        <img src="/images/diseño/Foto (3).JPG" alt="" />
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="image__wrapper">
-                        <img src="/images/diseño/Foto (4).JPG" alt="" />
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="image__wrapper">
-                        <img src="/images/diseño/Foto (5).JPG" alt="" />
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="image__wrapper">
-                        <img src="/images/diseño/Foto (6).JPG" alt="" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-pagination"></div>
-
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+              </div>
         </div>
+        
     </div>
 
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="/js/diseño.js"></script>
     <script src="/js/script.js"></script>
     
