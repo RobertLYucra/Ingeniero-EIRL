@@ -123,8 +123,11 @@ body {
   }
 }
 @media screen and (max-width: 480px) {
+  .container .slider-container .container .titulo {
+    font-size: 10px;
+  }
   .container .slider-container .wrapper {
-    height: 300px;
+    height: 280px;
   }
   .container .slider-container .carousel img {
     width: 100%;

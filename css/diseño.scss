@@ -120,8 +120,13 @@ body {
 
 
     @media screen and (max-width: 480px) {
+      .container{
+        .titulo{
+          font-size: 10px;
+        }
+      }
       .wrapper{
-        height: 300px;
+        height: 280px;
       }
       .carousel img {
         width: 100%;
