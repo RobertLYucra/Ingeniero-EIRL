@@ -47,12 +47,13 @@ body {
       top: 50%;
       height: 44px;
       width: 44px;
-      color: #343f4f;
+      color: red;
       cursor: pointer;
       font-size: 1.15rem;
       position: absolute;
       text-align: center;
       line-height: 44px;
+      border: 3px solid red;
       background: #fff;
       border-radius: 50%;
       transform: translateY(-50%);
@@ -62,7 +63,8 @@ body {
       transform: translateY(-50%) scale(0.9);
     }
     .wrapper i:hover {
-      background: #f2f2f2;
+      background: red;
+      color: #fff;
     }
     .wrapper i:first-child {
       left: -22px;
@@ -150,13 +152,14 @@ body {
     top: 50%;
     height: 44px;
     width: 44px;
-    color: #343f4f;
+    color: red;
     cursor: pointer;
     font-size: 1.15rem;
     position: absolute;
     text-align: center;
     line-height: 44px;
-    background: #fff;
+    background: white;
+    border: 3px solid red;
     border-radius: 50%;
     transform: translateY(-50%);
     transition: transform 0.1s linear;
@@ -165,7 +168,8 @@ body {
     transform: translateY(-50%) scale(0.9);
   }
   .wrappers i:hover {
-    background: #f2f2f2;
+    background: red;
+    color: white;
   }
   .wrappers i:first-child {
     left: -22px;

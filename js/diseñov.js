@@ -49,8 +49,6 @@ const draggings = (e) => {
     e.preventDefault();
     isDraggings = true;
     carousels.classList.add("draggings");
-    positionDiffs = (e.pageX || e.touches[0].pageX) - prevPageXs;
-    carousels.scrollLeft = prevScrollLefts - positionDiffs;
     showHideIcon();
 }
 
