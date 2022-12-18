@@ -337,3 +337,74 @@ main {
   }
 
 
+.main-main{
+  .main{
+    .perfiles{
+      display: grid;
+      place-items: center;
+      margin-bottom: 30px;
+
+      h2{
+        color: rgb(4, 4, 175)
+      }
+      .user{
+        position: relative;        display: grid;
+        place-items: center;
+        margin-top: 25px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 20px;
+        border-radius: 12px;
+        overflow: hidden;
+
+        .circule{
+          position: absolute;
+          background: #0b6f72;
+          height: 350px;
+          width: 370px;
+          z-index: -1;
+          transform: translateY(-250px);
+          border-radius: 100px;
+
+        }   
+        img {
+          max-width: 200px;
+          border-radius: 50%;
+          background: white;
+          padding: 8px;
+          height: 99%;
+        }
+        .name{
+          margin-top: 15px;
+          font-weight: bolder;
+          margin-bottom: -7px;
+        }
+        .profesion{
+          margin-bottom: 25px;
+        }
+        .description{
+          max-width: 320px;
+          margin-bottom: 35px;
+          text-align: center;
+        }
+        hr{
+          height: 3px;
+          width: 100%;
+          margin-bottom: 25px;
+          background: #0b6f72;
+          border: none;
+        }
+        .saber-mas{
+          border: 3px solid red;
+          padding: 7px 10px;
+          border-radius: 10px;
+          color: red;
+
+          &:hover{
+            color: #fff;
+            background: red;
+          }
+        }
+      }
+    }
+  }
+}

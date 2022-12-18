@@ -8,14 +8,20 @@
 
 body {
   font-family: "Quicksand", sans-serif;
+  min-height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.container {
+.containers {
+  height: 100%;
   margin-top: 100px;
   display: grid;
   place-items: center;
 }
-.container .titulo {
+.containers .titulo {
   font-size: 40px;
   max-width: 200px;
   color: rgb(235, 66, 66);
@@ -26,7 +32,7 @@ body {
   -webkit-animation: 0.5s ease;
           animation: 0.5s ease;
 }
-.container .slider-container {
+.containers .slider-container {
   display: flex;
   padding: 0 35px;
   align-items: center;
@@ -35,7 +41,7 @@ body {
   border-radius: 10px;
   margin-bottom: 45px;
 }
-.container .slider-container .wrapper {
+.containers .slider-container .wrapper {
   display: flex;
   max-width: 1200px;
   position: relative;
@@ -45,7 +51,7 @@ body {
   padding-top: 25px;
   padding-bottom: 25px;
 }
-.container .slider-container .wrapper i {
+.containers .slider-container .wrapper i {
   top: 50%;
   height: 44px;
   width: 44px;
@@ -61,36 +67,36 @@ body {
   transform: translateY(-50%);
   transition: transform 0.1s linear;
 }
-.container .slider-container .wrapper i:active {
+.containers .slider-container .wrapper i:active {
   transform: translateY(-50%) scale(0.9);
 }
-.container .slider-container .wrapper i:hover {
+.containers .slider-container .wrapper i:hover {
   background: red;
   color: #fff;
 }
-.container .slider-container .wrapper i:first-child {
+.containers .slider-container .wrapper i:first-child {
   left: -22px;
   display: none;
 }
-.container .slider-container .wrapper i:last-child {
+.containers .slider-container .wrapper i:last-child {
   right: -22px;
 }
-.container .slider-container .wrapper .carousel {
+.containers .slider-container .wrapper .carousel {
   font-size: 0px;
   cursor: pointer;
   overflow: hidden;
   white-space: nowrap;
   scroll-behavior: smooth;
 }
-.container .slider-container .carousel.dragging {
+.containers .slider-container .carousel.dragging {
   cursor: -webkit-grab;
   cursor: grab;
   scroll-behavior: auto;
 }
-.container .slider-container .carousel.dragging img {
+.containers .slider-container .carousel.dragging img {
   pointer-events: none;
 }
-.container .slider-container .carousel img {
+.containers .slider-container .carousel img {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -102,37 +108,37 @@ body {
   width: 33.3333333333%;
   border-radius: 5px;
 }
-.container .slider-container .carousel img:first-child {
+.containers .slider-container .carousel img:first-child {
   margin-left: 0px;
 }
 @media screen and (max-width: 900px) {
-  .container .slider-container .carousel img {
+  .containers .slider-container .carousel img {
     width: 55.5555555556%;
   }
 }
 @media screen and (max-width: 760px) {
-  .container .slider-container .wrapper {
+  .containers .slider-container .wrapper {
     height: auto;
   }
-  .container .slider-container .carousel img {
+  .containers .slider-container .carousel img {
     width: 83.3333333333%;
   }
 }
 @media screen and (max-width: 1100px) {
-  .container .slider-container .carousel img {
+  .containers .slider-container .carousel img {
     width: 50%;
   }
 }
 @media screen and (max-width: 500px) {
-  .container .slider-container .wrapper {
+  .containers .slider-container .wrapper {
     height: auto;
     width: auto;
   }
-  .container .slider-container .carousel img {
+  .containers .slider-container .carousel img {
     width: 100%;
   }
 }
-.container .slider-containers {
+.containers .slider-containers {
   display: flex;
   padding: 0 35px;
   align-items: center;
@@ -141,7 +147,7 @@ body {
   border-radius: 10px;
   margin-bottom: 45px;
 }
-.container .wrappers {
+.containers .wrappers {
   display: flex;
   max-width: 1200px;
   position: relative;
@@ -151,7 +157,7 @@ body {
   padding-top: 25px;
   padding-bottom: 25px;
 }
-.container .wrappers i {
+.containers .wrappers i {
   top: 50%;
   height: 44px;
   width: 44px;
@@ -168,36 +174,36 @@ body {
   transition: transform 0.1s linear;
   z-index: 150;
 }
-.container .wrappers i:active {
+.containers .wrappers i:active {
   transform: translateY(-50%) scale(0.9);
 }
-.container .wrappers i:hover {
+.containers .wrappers i:hover {
   background: red;
   color: white;
 }
-.container .wrappers i:first-child {
+.containers .wrappers i:first-child {
   left: -22px;
   display: none;
 }
-.container .wrappers i:last-child {
+.containers .wrappers i:last-child {
   right: -22px;
 }
-.container .wrappers .carousels {
+.containers .wrappers .carousels {
   font-size: 0px;
   cursor: pointer;
   overflow: hidden;
   white-space: nowrap;
   scroll-behavior: smooth;
 }
-.container .carousels.dragging {
+.containers .carousels.dragging {
   cursor: -webkit-grab;
   cursor: grab;
   scroll-behavior: auto;
 }
-.container .carousels.dragging video {
+.containers .carousels.dragging video {
   pointer-events: none;
 }
-.container .carousels video {
+.containers .carousels video {
   height: 340px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -209,27 +215,27 @@ body {
   border-radius: 12px;
   width: 33.3333333333%;
 }
-.container .carousels video:first-child {
+.containers .carousels video:first-child {
   margin-left: 0px;
 }
 @media screen and (max-width: 1100px) {
-  .container .carousels video {
+  .containers .carousels video {
     width: 50%;
   }
 }
 @media screen and (max-width: 900px) {
-  .container .carousels video {
+  .containers .carousels video {
     width: 50%;
   }
 }
 @media screen and (max-width: 500px) {
-  .container .carousels video {
+  .containers .carousels video {
     width: 100%;
     height: auto;
   }
 }
 
-.container .titulo-video {
+.containers .titulo-video {
   text-align: center;
   font-size: 40px;
   max-width: 450px;
@@ -243,11 +249,11 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-  .container .titulo {
+  .containers .titulo {
     font-size: 28px;
     max-width: 140px;
   }
-  .container .titulo-video {
+  .containers .titulo-video {
     font-size: 28px;
   }
 }/*# sourceMappingURL=diseño.css.map */
