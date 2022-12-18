@@ -72,6 +72,7 @@ main .container .main-texto span {
   margin-top: 0px;
   width: 100%;
   left: 0;
+  margin-bottom: 150px;
 }
 
 main .container .main-texto span h3 {
@@ -400,6 +401,8 @@ main .container .main-redes-sociales .instagram:hover {
   padding: 20px;
   border-radius: 12px;
   overflow: hidden;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 .main-main .main .perfiles .user .circule {
   position: absolute;
