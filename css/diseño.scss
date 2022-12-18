@@ -163,6 +163,7 @@ body {
     border-radius: 50%;
     transform: translateY(-50%);
     transition: transform 0.1s linear;
+    z-index: 150;
   }
   .wrappers i:active {
     transform: translateY(-50%) scale(0.9);
