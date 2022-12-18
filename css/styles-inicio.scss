@@ -341,12 +341,22 @@ main {
       display: grid;
       place-items: center;
       margin-bottom: 30px;
+      margin-top: 30px;
 
       h2{
         color: rgb(4, 4, 175)
       }
+      .tarjetas{
+        display: flex;
+        transition: ease-in-out  1s;
+        .user-div{
+          display: flex;
+          transition:   ease-in-out 1s ;
+        }        
+      }
       .user{
-        position: relative;        display: grid;
+        position: relative;        
+        display: grid;
         place-items: center;
         margin-top: 25px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -355,6 +365,8 @@ main {
         overflow: hidden;
         margin-left: 25px;
         margin-right: 25px;
+        max-width: 280px;
+        transition: ease 0.5s;
 
         .circule{
           position: absolute;
@@ -367,10 +379,12 @@ main {
 
         }   
         img {
-          max-width: 200px;
+          max-width: 150px;
+          height: 148px;
           border-radius: 50%;
           background: white;
-          padding: 8px;        }
+          padding: 8px;
+        }
         .name{
           margin-top: 15px;
           font-weight: bolder;
@@ -400,6 +414,35 @@ main {
           &:hover{
             color: #fff;
             background: red;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width : 1200px) {
+  .main-main{
+    .main{
+      .perfiles{
+        .tarjetas{
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width : 657px) {
+  .main-main{
+    .main{
+      .perfiles{
+        .tarjetas{
+          .user-div{
+            flex-direction: column;
+            .user{
+              max-width: 450px;
+            }
           }
         }
       }

@@ -382,9 +382,18 @@ main .container .main-redes-sociales .instagram:hover {
   display: grid;
   place-items: center;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 .main-main .main .perfiles h2 {
   color: rgb(4, 4, 175);
+}
+.main-main .main .perfiles .tarjetas {
+  display: flex;
+  transition: ease-in-out 1s;
+}
+.main-main .main .perfiles .tarjetas .user-div {
+  display: flex;
+  transition: ease-in-out 1s;
 }
 .main-main .main .perfiles .user {
   position: relative;
@@ -397,6 +406,8 @@ main .container .main-redes-sociales .instagram:hover {
   overflow: hidden;
   margin-left: 25px;
   margin-right: 25px;
+  max-width: 280px;
+  transition: ease 0.5s;
 }
 .main-main .main .perfiles .user .circule {
   position: absolute;
@@ -408,7 +419,8 @@ main .container .main-redes-sociales .instagram:hover {
   border-radius: 100px;
 }
 .main-main .main .perfiles .user img {
-  max-width: 200px;
+  max-width: 150px;
+  height: 148px;
   border-radius: 50%;
   background: white;
   padding: 8px;
@@ -442,4 +454,18 @@ main .container .main-redes-sociales .instagram:hover {
 .main-main .main .perfiles .user .saber-mas:hover {
   color: #fff;
   background: red;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-main .main .perfiles .tarjetas {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 657px) {
+  .main-main .main .perfiles .tarjetas .user-div {
+    flex-direction: column;
+  }
+  .main-main .main .perfiles .tarjetas .user-div .user {
+    max-width: 450px;
+  }
 }/*# sourceMappingURL=styles-inicio.css.map */
