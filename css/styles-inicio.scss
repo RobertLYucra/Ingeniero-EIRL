@@ -160,18 +160,20 @@ main {
       align-items: center;
       .title{
         display: grid;
-        margin: 50px 350px;
         transition: all .5s ease;
+        margin: 25px 25px;
         .quienes{
-          margin: auto;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
+          display: grid;
+          place-items: center;
           h1{
             color: rgb(4, 4, 175) ;
-            display: block;
             padding-bottom: 5px;
             margin-bottom: 25px;
+          }
+          p{
+            max-width: 850px;
+            text-align: justify;
+            padding: 12px;
           }
         }
       }
@@ -266,7 +268,7 @@ main {
     .main-main{
       .main{
         .title{
-          margin: 50px 200px;
+          margin: auto 15px
         }
         
       }}
@@ -275,9 +277,6 @@ main {
   @media screen and (max-width: 1040px) {
     .main-main{
       .main{
-        .title{
-          margin: 50px 100px;
-        }
         .contac-main{
           .contact{
             flex-direction: column;
@@ -301,12 +300,7 @@ main {
 
     .main-main{
       .main{
-        .title{
-          margin: 50px 50px;
-          p{
-            text-align: justify;
-          }
-        }
+
         .contac-main{
           margin: 10px 10px;
           .contact{

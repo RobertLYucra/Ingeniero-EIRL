@@ -229,20 +229,22 @@ main .container .main-redes-sociales .instagram:hover {
 }
 .main-main .main .title {
   display: grid;
-  margin: 50px 350px;
   transition: all 0.5s ease;
+  margin: 25px 25px;
 }
 .main-main .main .title .quienes {
-  margin: auto;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  display: grid;
+  place-items: center;
 }
 .main-main .main .title .quienes h1 {
   color: rgb(4, 4, 175);
-  display: block;
   padding-bottom: 5px;
   margin-bottom: 25px;
+}
+.main-main .main .title .quienes p {
+  max-width: 850px;
+  text-align: justify;
+  padding: 12px;
 }
 .main-main .main .contac-main {
   display: grid;
@@ -328,13 +330,10 @@ main .container .main-redes-sociales .instagram:hover {
 
 @media screen and (max-width: 1360px) {
   .main-main .main .title {
-    margin: 50px 200px;
+    margin: auto 15px;
   }
 }
 @media screen and (max-width: 1040px) {
-  .main-main .main .title {
-    margin: 50px 100px;
-  }
   .main-main .main .contac-main .contact {
     flex-direction: column;
     transition: all 0.5s ease;
@@ -351,12 +350,6 @@ main .container .main-redes-sociales .instagram:hover {
   }
 }
 @media screen and (max-width: 768px) {
-  .main-main .main .title {
-    margin: 50px 50px;
-  }
-  .main-main .main .title p {
-    text-align: justify;
-  }
   .main-main .main .contac-main {
     margin: 10px 10px;
   }
