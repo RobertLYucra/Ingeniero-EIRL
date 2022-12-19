@@ -15,78 +15,6 @@ main {
   margin-top: 120px;
   font-family: "Poppins", sans-serif;
 }
-main .main-content .perfil .title {
-  justify-items: center;
-  align-items: center;
-  text-align: center;
-  line-height: 25px;
-  margin: auto 10px;
-}
-main .main-content .perfil .title p {
-  border-bottom: 2px solid red;
-  border-radius: 12px;
-  margin: 0 auto;
-  max-width: 450px;
-  font-weight: bold;
-}
-main .main-content .perfil .title .name {
-  color: rgb(4, 4, 175);
-}
-main .main-content .perfil .informacion {
-  display: grid;
-  margin-top: 50px;
-}
-main .main-content .perfil .informacion .arriba {
-  margin: auto;
-}
-main .main-content .perfil .informacion .info-gg {
-  margin: auto 10px;
-  display: flex;
-  margin-bottom: 60px;
-  max-width: 1000px;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 5px 10px rgb(105, 105, 107);
-}
-main .main-content .perfil .informacion .info-gg figure {
-  margin: 20px 50px;
-  display: grid;
-}
-main .main-content .perfil .informacion .info-gg figure img {
-  height: 250px;
-  border-radius: 15px;
-  box-shadow: 0 5px 5px rgb(95, 94, 94);
-  transition: all 0.8s ease;
-}
-main .main-content .perfil .informacion .info-gg figure .info {
-  margin-top: 25px;
-  border-left: 3px solid red;
-  padding-left: 25px;
-}
-main .main-content .perfil .informacion .info-gg .caja {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-}
-main .main-content .perfil .informacion .info-gg .caja .especialidad {
-  margin: auto;
-}
-main .main-content .perfil .informacion .info-gg .caja .especialidad .text {
-  font-size: 17px;
-  line-height: 35px;
-}
-main .main-content .perfil .informacion .info-gg .caja .especialidad .text .ic {
-  color: rgb(8, 8, 141);
-}
-main .main-content .perfil .informacion .info-gg .caja .especialidad li {
-  margin-top: 15px;
-  line-height: 30px;
-  font-size: 17px;
-}
-main .main-content .perfil .informacion .info-gg .caja .especialidad li ul .icon {
-  color: red;
-  padding-right: 15px;
-}
 main .main-content .logros {
   display: grid;
 }
@@ -201,26 +129,7 @@ main .main-content .projects .cards .images .face:hover::before {
   border-radius: 15px;
 }
 
-@media screen and (max-width: 870px) {
-  main .main-content .perfil .informacion .info-gg figure img {
-    width: auto;
-  }
-  main .main-content .perfil .informacion .info-gg figure .info {
-    margin-bottom: 25px;
-  }
-}
 @media screen and (max-width: 768px) {
-  main .main-content .perfil .informacion .info-gg {
-    flex-direction: column;
-    display: grid;
-  }
-  main .main-content .perfil .informacion .info-gg figure {
-    margin: auto;
-  }
-  main .main-content .perfil .informacion .info-gg figure img {
-    margin: auto;
-    transition: 0.5s ease;
-  }
   main .main-content .logros .cards {
     margin: 50px 0;
   }
@@ -279,5 +188,101 @@ main .main-content .projects .cards .images .face:hover::before {
   }
   main .main-content .projects .cards .images .face:hover::before {
     font-size: 8px;
+  }
+}
+.main-content .perfiles {
+  display: grid;
+  place-items: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.main-content .perfiles h2 {
+  color: red;
+  font-family: "Poppins", sans-serif;
+  font-size: 33px;
+  border-bottom: 3px solid red;
+  padding: 0 25px;
+}
+.main-content .perfiles .tarjetas {
+  margin-top: 15px;
+  display: flex;
+  transition: ease-in-out 1s;
+}
+.main-content .perfiles .tarjetas .user-div {
+  display: flex;
+  transition: ease-in-out 1s;
+}
+.main-content .perfiles .user {
+  position: relative;
+  display: grid;
+  place-items: center;
+  margin-top: 25px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-left: 25px;
+  margin-right: 25px;
+  max-width: 280px;
+  transition: ease 0.5s;
+}
+.main-content .perfiles .user .circule {
+  position: absolute;
+  background: #0b6f72;
+  height: 350px;
+  width: 370px;
+  z-index: -1;
+  transform: translateY(-250px);
+  border-radius: 100px;
+}
+.main-content .perfiles .user img {
+  max-width: 150px;
+  height: 148px;
+  border-radius: 50%;
+  background: white;
+  padding: 8px;
+}
+.main-content .perfiles .user .name {
+  margin-top: 15px;
+  font-weight: bolder;
+  margin-bottom: -7px;
+}
+.main-content .perfiles .user .profesion {
+  margin-bottom: 25px;
+}
+.main-content .perfiles .user .description {
+  max-width: 320px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+.main-content .perfiles .user hr {
+  height: 3px;
+  width: 100%;
+  margin-bottom: 25px;
+  background: #0b6f72;
+  border: none;
+}
+.main-content .perfiles .user .saber-mas {
+  border: 3px solid red;
+  padding: 7px 10px;
+  border-radius: 10px;
+  color: red;
+}
+.main-content .perfiles .user .saber-mas:hover {
+  color: #fff;
+  background: red;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-content .perfiles .tarjetas {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 657px) {
+  .main-content .perfiles .tarjetas .user-div {
+    flex-direction: column;
+  }
+  .main-content .perfiles .tarjetas .user-div .user {
+    max-width: 450px;
   }
 }/*# sourceMappingURL=style-profesional.css.map */

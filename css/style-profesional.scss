@@ -14,87 +14,7 @@
     margin-top: 120px;
     font-family: 'Poppins', sans-serif;
     .main-content{
-        .perfil{
-
-            .title{
-                justify-items: center;
-                align-items: center;
-                text-align: center;
-                line-height: 25px;
-                margin: auto 10px;
-                p{
-                    border-bottom: 2px solid red ;
-                    border-radius: 12px;
-                    margin: 0 auto;
-                    max-width: 450px;
-                    font-weight: bold;
-                }
-                .name{
-                    color: rgb(4, 4, 175) ;
-                }
-                
-            }
-            .informacion{
-                display: grid;
-                margin-top: 50px;
-                
-                .arriba{
-                    margin: auto;
-                }
-                .info-gg{
-                    margin: auto 10px;
-                    display:flex;
-                    margin-bottom: 60px;  
-                    max-width: 1000px;
-                    padding: 40px;
-                    border-radius: 12px;
-                    box-shadow: 0 5px 10px rgb(105, 105, 107);
-                    figure{
-                        margin: 20px 50px;
-                        display: grid;
-                        
-                        img{
-                            height: 250px;
-                            border-radius: 15px;
-                            box-shadow: 0 5px 5px rgb(95, 94, 94);
-                            transition: all 0.8s ease;
-                            
-                        }
-                        .info{
-                            margin-top: 25px;
-                            border-left: 3px solid red;
-                            padding-left: 25px;
-                        }
-                    }              
-                    .caja{
-                        display: grid;
-                        align-items: center;
-                        justify-content: center;
-                        .especialidad{
-                            margin: auto;
-                            .text{
-                                font-size: 17px;
-                                line-height: 35px;
-                                .ic{
-                                    color: rgb(8, 8, 141);
-                                }
-                            }
-                            li{
-                                margin-top: 15px  ;
-                                line-height: 30px;
-                                font-size: 17px;
-                                ul{
-                                    .icon{
-                                        color: red;
-                                        padding-right: 15px ;
-                                    }
-                                }
-                            }
-                        }
-                    }
-            }
-        }
-        }
+        
         .logros{
             display: grid;
             h2{
@@ -219,47 +139,11 @@
         }
     }
  }
- @media screen and (max-width: 870px) {
-    main{
-        .main-content{
-            .perfil{
-                .informacion{
-                    .info-gg{
-                        figure{
-                            img{
-                                width: auto;
-                            }
-                            .info{
-                                margin-bottom: 25px;
-                            }
-                            
-                        }
-                }
-            }
-        }
-    }
- }
-}
+
 
  @media screen and (max-width: 768px) {
     main{
         .main-content{
-            .perfil{
-                .informacion{
-                    .info-gg{
-                        flex-direction: column;
-                        display: grid;
-                        figure{
-                            margin: auto;
-                            img{
-                                margin: auto;
-                                transition:  0.5s ease;
-                                
-                            }
-                        }
-                    }
-                }
-            }
             .logros{
                 .cards{
                     margin: 50px 0;
@@ -341,3 +225,123 @@
         }
     }
  }}
+
+
+
+
+    .main-content{
+      .perfiles{
+        display: grid;
+        place-items: center;
+        margin-bottom: 30px;
+        margin-top: 30px;
+  
+        h2{
+          color:red;
+          font-family: 'Poppins', sans-serif;
+          font-size: 33px;
+          border-bottom: 3px solid red;
+          padding: 0 25px;
+        }
+        .tarjetas{
+            margin-top: 15px;
+          display: flex;
+          transition: ease-in-out  1s;
+          .user-div{
+            display: flex;
+            transition:   ease-in-out 1s ;
+          }        
+        }
+        .user{
+          position: relative;        
+          display: grid;
+          place-items: center;
+          margin-top: 25px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          padding: 20px;
+          border-radius: 12px;
+          overflow: hidden;
+          margin-left: 25px;
+          margin-right: 25px;
+          max-width: 280px;
+          transition: ease 0.5s;
+  
+          .circule{
+            position: absolute;
+            background: #0b6f72;
+            height: 350px;
+            width: 370px;
+            z-index: -1;
+            transform: translateY(-250px);
+            border-radius: 100px;
+  
+          }   
+          img {
+            max-width: 150px;
+            height: 148px;
+            border-radius: 50%;
+            background: white;
+            padding: 8px;
+          }
+          .name{
+            margin-top: 15px;
+            font-weight: bolder;
+            margin-bottom: -7px;
+          }
+          .profesion{
+            margin-bottom: 25px;
+          }
+          .description{
+            max-width: 320px;
+            margin-bottom: 35px;
+            text-align: center;
+          }
+          hr{
+            height: 3px;
+            width: 100%;
+            margin-bottom: 25px;
+            background: #0b6f72;
+            border: none;
+          }
+          .saber-mas{
+            border: 3px solid red;
+            padding: 7px 10px;
+            border-radius: 10px;
+            color: red;
+  
+            &:hover{
+              color: #fff;
+              background: red;
+            }
+          }
+        }
+      }
+    }
+  
+  
+  @media screen and (max-width : 1200px) {
+      .main-content{
+        .perfiles{
+          .tarjetas{
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  
+  
+  @media screen and (max-width : 657px) {
+      .main-content{
+        .perfiles{
+          .tarjetas{
+            .user-div{
+              flex-direction: column;
+              .user{
+                max-width: 450px;
+              }
+            }
+          }
+        }
+      }
+    }
+  
