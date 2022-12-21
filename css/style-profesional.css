@@ -203,6 +203,7 @@ main .main-content .projects .cards .images .face:hover::before {
   font-size: 33px;
   border-bottom: 3px solid red;
   padding: 0 25px;
+  margin: auto 15px;
 }
 .main-content .perfiles .tarjetas {
   margin-top: 15px;
@@ -425,13 +426,18 @@ main .main-content .projects .cards .images .face:hover::before {
   }
   .tarjetas-info .users-info .users-moreinfo .figure .cir {
     width: 100%;
-    height: 200px;
+    height: 140px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
+  .tarjetas-info .users-info .users-moreinfo .figure img {
+    max-width: 150px;
+    max-height: 148px;
+    margin-bottom: 15px;
+  }
   .tarjetas-info .users-info .users-moreinfo .experiencia {
     border-bottom-left-radius: 10px;
-    border-top-bottom-radius: 10px;
+    border-bottom-right-radius: 10px;
     max-width: 360px;
   }
 }
