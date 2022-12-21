@@ -196,8 +196,9 @@ main .main-content .projects .cards .images .face:hover::before {
   margin-bottom: 30px;
   margin-top: 30px;
 }
-.main-content .perfiles h2 {
+.main-content .perfiles h2.nt {
   color: red;
+  text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 33px;
   border-bottom: 3px solid red;
@@ -284,5 +285,171 @@ main .main-content .projects .cards .images .face:hover::before {
   }
   .main-content .perfiles .tarjetas .user-div .user {
     max-width: 450px;
+  }
+}
+.main-content .perfiles .position {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: grid;
+  place-items: center;
+}
+
+.fondo-as {
+  position: absolute;
+  width: 100%;
+  height: 2000px;
+  background-color: #fff;
+  z-index: 10;
+  opacity: 0.5;
+  top: 0;
+  display: none;
+}
+
+.active-f {
+  display: block;
+}
+
+.tarjetas-info .users-info.active {
+  display: grid;
+  transition: 0.5s;
+}
+
+.tarjetas-info {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  top: 50%;
+  z-index: 11;
+}
+.tarjetas-info .users-info {
+  display: none;
+}
+.tarjetas-info .users-info .users-moreinfo {
+  display: grid;
+  place-items: center;
+  max-width: 600px;
+  border-radius: 15px;
+  margin: auto 25px;
+}
+.tarjetas-info .users-info .users-moreinfo .cerrar {
+  width: 100%;
+  height: 25px;
+  display: grid;
+  place-items: end;
+  margin-bottom: 25px;
+}
+.tarjetas-info .users-info .users-moreinfo .cerrar .white {
+  position: absolute;
+  background: red;
+  height: 8px;
+  width: 50px;
+  cursor: pointer;
+  transform: rotate(45deg);
+  z-index: 12;
+}
+.tarjetas-info .users-info .users-moreinfo .cerrar .white::after {
+  content: "";
+  width: 50px;
+  height: 8px;
+  position: absolute;
+  background-color: red;
+  transform: rotate(-90deg);
+}
+.tarjetas-info .users-info .users-moreinfo .figure {
+  transition: 0.5s ease;
+  position: relative;
+  background: rgb(232, 239, 241);
+  display: flex;
+  margin-bottom: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 25px;
+  box-shadow: 0PX -20px 50px 30px black;
+}
+.tarjetas-info .users-info .users-moreinfo .figure .cir {
+  width: 200px;
+  height: 100%;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  background-color: #4550ec;
+  position: absolute;
+  border-top-left-radius: 9px;
+}
+.tarjetas-info .users-info .users-moreinfo .figure .image {
+  display: grid;
+  place-items: center;
+}
+.tarjetas-info .users-info .users-moreinfo .figure .image img {
+  width: 250px;
+  border-radius: 50%;
+  z-index: 10;
+  padding: 5px;
+  background-color: white;
+  height: 248px;
+}
+.tarjetas-info .users-info .users-moreinfo .figure .perfils {
+  display: grid;
+  place-items: center;
+}
+.tarjetas-info .users-info .users-moreinfo .figure .perfils div {
+  z-index: 15;
+  text-align: center;
+}
+.tarjetas-info .users-info .users-moreinfo .figure .perfils div h2 {
+  color: #4550ec;
+  margin-bottom: -5px;
+}
+.tarjetas-info .users-info .users-moreinfo .figure .perfils div h3 {
+  color: red;
+  margin-bottom: 50px;
+  border-bottom: 2px solid red;
+}
+.tarjetas-info .users-info .users-moreinfo .experiencia {
+  padding: 25px;
+  line-height: 25px;
+  background-color: #fff;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  box-shadow: 0PX 30px 50px 30px black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.tarjetas-info .users-info .users-moreinfo .experiencia p {
+  margin: 5px auto;
+}
+.tarjetas-info .users-info .users-moreinfo .experiencia p .md {
+  margin-right: 10px;
+  color: #4550ec;
+}
+.tarjetas-info .users-info .users-moreinfo .experiencia ul li {
+  margin: 5px auto;
+}
+.tarjetas-info .users-info .users-moreinfo .experiencia ul li .md {
+  color: #1221ec;
+}
+
+@media screen and (max-width: 510px) {
+  .tarjetas-info .users-info .users-moreinfo .figure {
+    flex-direction: column;
+  }
+  .tarjetas-info .users-info .users-moreinfo .figure .cir {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .tarjetas-info .users-info .users-moreinfo .experiencia {
+    border-radius: 15px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .tarjetas-info .users-info .users-moreinfo .experiencia {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 }/*# sourceMappingURL=style-profesional.css.map */
