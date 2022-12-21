@@ -230,11 +230,11 @@ main .main-content .projects .cards .images .face:hover::before {
 .main-content .perfiles .user .circule {
   position: absolute;
   background: #0b6f72;
-  height: 350px;
-  width: 370px;
+  height: 280px;
+  width: 360px;
   z-index: -1;
   transform: translateY(-250px);
-  border-radius: 100px;
+  border-radius: 0;
 }
 .main-content .perfiles .user img {
   max-width: 150px;
@@ -421,6 +421,7 @@ main .main-content .projects .cards .images .face:hover::before {
 @media screen and (max-width: 510px) {
   .tarjetas-info .users-info .users-moreinfo .figure {
     flex-direction: column;
+    max-width: 360px;
   }
   .tarjetas-info .users-info .users-moreinfo .figure .cir {
     width: 100%;
@@ -429,7 +430,9 @@ main .main-content .projects .cards .images .face:hover::before {
     border-top-right-radius: 10px;
   }
   .tarjetas-info .users-info .users-moreinfo .experiencia {
-    border-radius: 15px;
+    border-bottom-left-radius: 10px;
+    border-top-bottom-radius: 10px;
+    max-width: 360px;
   }
 }
 @media screen and (max-width: 400px) {

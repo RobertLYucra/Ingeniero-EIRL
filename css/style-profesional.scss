@@ -272,11 +272,11 @@
           .circule{
             position: absolute;
             background: #0b6f72;
-            height: 350px;
-            width: 370px;
+            height: 280px;
+            width: 360px;
             z-index: -1;
             transform: translateY(-250px);
-            border-radius: 100px;
+            border-radius: 0;
   
           }   
           img {
@@ -496,6 +496,7 @@
       .users-moreinfo{
         .figure{
           flex-direction: column;
+          max-width: 360px;
           .cir{
             width: 100%;
             height: 200px;
@@ -504,7 +505,9 @@
           }
         }
         .experiencia{
-          border-radius: 15px;
+          border-bottom-left-radius: 10px;
+            border-top-bottom-radius: 10px;
+          max-width: 360px;
         }
       }
     }
