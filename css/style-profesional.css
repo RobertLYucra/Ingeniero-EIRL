@@ -214,6 +214,22 @@ main .main-content .projects .cards .images .face:hover::before {
   display: flex;
   transition: ease-in-out 1s;
 }
+.main-content .perfiles .user.romulo .circule {
+  background: rgb(2, 0, 36);
+  background: radial-gradient(circle, rgb(2, 0, 36) 0%, rgb(63, 63, 223) 72%, rgb(0, 212, 255) 100%);
+}
+.main-content .perfiles .user.william .circule {
+  background: rgb(2, 0, 36);
+  background: radial-gradient(circle, rgb(2, 0, 36) 0%, rgb(34, 191, 39) 81%, rgb(0, 212, 255) 100%);
+}
+.main-content .perfiles .user.sosimo .circule {
+  background: rgb(2, 0, 36);
+  background: radial-gradient(circle, rgb(2, 0, 36) 0%, rgb(63, 63, 223) 72%, rgb(0, 212, 255) 100%);
+}
+.main-content .perfiles .user.elias .circule {
+  background: rgb(2, 0, 36);
+  background: radial-gradient(circle, rgb(2, 0, 36) 0%, rgb(34, 191, 39) 81%, rgb(0, 212, 255) 100%);
+}
 .main-content .perfiles .user {
   position: relative;
   display: grid;
@@ -230,7 +246,7 @@ main .main-content .projects .cards .images .face:hover::before {
 }
 .main-content .perfiles .user .circule {
   position: absolute;
-  background: #0b6f72;
+  background: #212de2;
   height: 280px;
   width: 360px;
   z-index: -1;
@@ -248,9 +264,13 @@ main .main-content .projects .cards .images .face:hover::before {
   margin-top: 15px;
   font-weight: bolder;
   margin-bottom: -7px;
+  text-align: center;
+  color: rgb(26, 11, 161);
 }
 .main-content .perfiles .user .profesion {
   margin-bottom: 25px;
+  text-align: center;
+  color: rgb(228, 64, 64);
 }
 .main-content .perfiles .user .description {
   max-width: 320px;
@@ -261,7 +281,7 @@ main .main-content .projects .cards .images .face:hover::before {
   height: 3px;
   width: 100%;
   margin-bottom: 25px;
-  background: #0b6f72;
+  background: #212de2;
   border: none;
 }
 .main-content .perfiles .user .saber-mas {
@@ -361,7 +381,7 @@ main .main-content .projects .cards .images .face:hover::before {
   z-index: 9;
   top: 0;
   left: 0;
-  background-color: #4550ec;
+  background-color: #212de2;
   position: absolute;
   border-top-left-radius: 9px;
 }
@@ -386,7 +406,7 @@ main .main-content .projects .cards .images .face:hover::before {
   text-align: center;
 }
 .tarjetas-info .users-info .users-moreinfo .figure .perfils div h2 {
-  color: #4550ec;
+  color: #212de2;
   margin-bottom: -5px;
 }
 .tarjetas-info .users-info .users-moreinfo .figure .perfils div h3 {

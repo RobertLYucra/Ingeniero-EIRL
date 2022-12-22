@@ -256,6 +256,30 @@
             transition:   ease-in-out 1s ;
           }        
         }
+        .user.romulo{
+          .circule{
+            background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(63,63,223,1) 72%, rgba(0,212,255,1) 100%);
+          }
+        }
+        .user.william{
+          .circule{
+            background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(34,191,39,1) 81%, rgba(0,212,255,1) 100%);
+          }
+        }
+        .user.sosimo{
+          .circule{
+            background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(63,63,223,1) 72%, rgba(0,212,255,1) 100%);
+          }
+        }
+        .user.elias{
+          .circule{
+            background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(34,191,39,1) 81%, rgba(0,212,255,1) 100%);
+          }
+        }
         .user{
           position: relative;        
           display: grid;
@@ -272,7 +296,7 @@
   
           .circule{
             position: absolute;
-            background: #0b6f72;
+            background: #212de2;
             height: 280px;
             width: 360px;
             z-index: -1;
@@ -291,9 +315,13 @@
             margin-top: 15px;
             font-weight: bolder;
             margin-bottom: -7px;
+            text-align: center;
+            color: rgb(26, 11, 161);
           }
           .profesion{
             margin-bottom: 25px;
+            text-align: center;
+            color: rgb(228, 64, 64);
           }
           .description{
             max-width: 320px;
@@ -304,7 +332,7 @@
             height: 3px;
             width: 100%;
             margin-bottom: 25px;
-            background: #0b6f72;
+            background: #212de2;
             border: none;
           }
           .saber-mas{
@@ -425,7 +453,7 @@
         z-index: 9;
         top: 0;
         left: 0;
-        background-color: #4550ec;
+        background-color: #212de2;
         position: absolute;
         border-top-left-radius: 9px ;
       }
@@ -448,7 +476,7 @@
           z-index: 15;
           text-align: center;
           h2{
-            color: #4550ec;
+            color: #212de2;
             margin-bottom: -5px;
           }
           h3{
