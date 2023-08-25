@@ -8,257 +8,110 @@
     <link rel="stylesheet" href="/css/style-nav.css" />
     <link rel="stylesheet" href="/css/style-profesional.css" />
     <link rel="shortcut icon" href="/images/icon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header>
-      <!-- NAV -->
-      <header>
-        <!-- NAV -->
-        <nav id="nav">
-          <div class="logo">
-            <a href="/index.html">
-              <img src="/images/logo2.png" alt="Logo"
-            /></a>
-          </div>
-          <ul id="options">
-            <div class="opciones">
-              <li class="list">
-                <a href="/Index.html" class="text-uppercase">Inicio</a>
-              </li>
-              <li class="list">
-                <a href="/html/sobre_nosotros.html" class="text-uppercase"
-                  >Sobre Nosotros</a
-                >
-              </li>
-              <li class="list">
-                <a href="/html/que-hacemos.html" class="text-uppercase"
-                  >Que hacemos</a
-                >
-              </li>
-              <li class="list active">
-                <a href="/html/exp-profesional.html" class="text-uppercase"
-                  >Experiencia Profesional</a
-                >
-              </li>
-              <li class="list">
-                <a href="/html/n-trayectoria.html" class="text-uppercase"
-                  >nuestra trayectoria</a
-                >
-              </li>
-              <li class="list">
-                <a href="/html/contacts.html" class="text-uppercase"
-                  >contactos</a
-                >
-              </li>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img class="logo" src="/images/logo2.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h3 class="offcanvas-title" id="offcanvasNavbarLabel">
+                YR Ingenierios EIRL
+              </h3>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
             </div>
-          </ul>
-          <div class="menu" id="menu">
-            <span></span>
-            <span></span>
-            <span></span>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link "
+                    aria-current="page"
+                    href="/./Index.html"
+                    >INICIO</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sobre_nosotros.html">NOSOTROS</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a role="button" class="nav-link"  href="que-hacemos.html"> QUÉ HACEMOS</a>
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="que-hacemos.html"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                  </a>
+                  <ul class="dropdown-menu">
+                    
+                    <li>
+                      <a class="dropdown-item" href="./diseño.html">Diseños</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./diseño.html">Diseños</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="n-trayectoria.html">TRAYECTORIA</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link active" href="exp-profesional.html"
+                    >PROFESIONALES</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacts.html">CONTACTOS</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
     </header>
 
     <main>
       <div class="main-content">
         <div class="perfiles">
           <h2 class="nt">Nuestros profesionales</h2>
-          <div class="position">
-            <div class="tarjetas-info">
-              <div class="users-info" id="romulo">
-                <div class="users-moreinfo" >
-                  <div class='cerrar'>
-                    <div class="white">
-                    </div>
-                    
-                  </div>
-                  <fugure class="figure">
-                    <div class="cir"></div>
-                    <div class="image">
-                      <img src="/images/foto-romulo.jpg">
-      
-                    </div>
-                    <div class="perfils">
-                      <div>
-                      <h2> Ing. Romulo Yucra Rodas</h2>
-                      <h3>Gerente General</h3>
-                      <h4> MaestrÍa UNI - Ingeniero Civil</h4>
-                      <h4> PMI UNI - ISO 9001</h4>
-                    </div>
-                    </div>
-                  </fugure>
-                  <div class="experiencia">
-                    <p><ion-icon name="planet"></ion-icon>Especialista en remodelación de edificios, viviendas, oficinas y centros
-                      comerciales </p>
-                      <p><ion-icon name="planet"></ion-icon> Especialista en elaboración y evaluación de expedientes técnicos.
-                        - Especialista en implementación de sistemas de Gestión en las empresas
-                        constructoras.</p>
-                        <p><ion-icon name="planet"></ion-icon>Especialista en las auditorias en sistemas de gestión.
-                          Sistemas de gestión bajo el enfoque de <b>PMI, Normas ISO y Last Planner</b></p>
-      
-                          <p><ion-icon name="planet"></ion-icon>Especialista en Diseños, ejecución y Supervisión de obras, como:</p>
-      
-                          <ul>
-                            <li><ion-icon name="caret-forward-outline"></ion-icon>Edificios</li>
-                            <li><ion-icon name="caret-forward-outline"></ion-icon>Puentes</li>
-                            <li><ion-icon name="caret-forward-outline"></ion-icon>Colegios</li>
-                            <li><ion-icon name="caret-forward-outline"></ion-icon>Naves industriales</li>
-                            <li><ion-icon name="caret-forward-outline"></ion-icon>Viaductos</li>
-                            <li><ion-icon name="caret-forward-outline"></ion-icon>Centros comerciales</li>
-                            <li><ion-icon name="caret-forward-outline"></ion-icon>Cines y teatros</li>
-                          </ul>
-                  </div>
-      
-      
-                </div>
-              </div>
-              <div class="users-info" id="William">
-                <div class="users-moreinfo" >
-                  <div class='cerrar'>
-                    <div class="white">
-                    </div>
-                    
-                  </div>
-                  <fugure class="figure">
-                    <div class="cir"></div>
-                    <div class="image">
-                      <img src="/images/foto-romulo.jpg">
-      
-                    </div>
-                    <div class="perfils">
-                      <div>
-                      <h2> Ing. William Yucra Rodas</h2>
-                      <h3>Gerente de Operaciones</h3>
-                      <h4> Maestría en Gestión de Proyectos</h4>
-                    </div>
-                    </div>
-                  </fugure>
-                  <div class="experiencia">
-                    <p><ion-icon name="planet"></ion-icon>Especialista en remodelación de edificios, viviendas, oficinas y centros
-                      comerciales </p>
-                      <p><ion-icon name="planet"></ion-icon> Especialista en elaboración y evaluación de expedientes técnicos.
-                        - Especialista en implementación de sistemas de Gestión en las empresas
-                        constructoras.</p>
-                        <p><ion-icon name="planet"></ion-icon>Especialista en las auditorias en sistemas de gestión.
-                          Sistemas de gestión bajo el enfoque de <b>PMI, Normas ISO y Last Planner</b></p>
-      
-                          <p><ion-icon name="planet"></ion-icon>Especialista en Diseños, ejecución y Supervisión de obras, como:</p>
-      
-                          <ul>
-                            <li><ion-icon name="caret-forward-outline"></ion-icon>Edificios</li>
-                            <li><ion-icon name="caret-forward-outline"></ion-icon>Puentes</li>
-                            <li><ion-icon name="caret-forward-outline"></ion-icon>Colegios</li>
-                            <li><ion-icon name="caret-forward-outline"></ion-icon>Naves industriales</li>
-                            <li><ion-icon name="caret-forward-outline"></ion-icon>Viaductos</li>
-                            <li><ion-icon name="caret-forward-outline"></ion-icon>Centros comerciales</li>
-                            <li><ion-icon name="caret-forward-outline"></ion-icon>Cines y teatros</li>
-                          </ul>
-                  </div>
-      
-      
-                </div>
-              </div>
-              <div class="users-info" id="sosimo">
-                <div class="users-moreinfo" >
-                  <div class='cerrar'>
-                    <div class="white">
-                    </div>
-                    
-                  </div>
-                  <fugure class="figure">
-                    <div class="cir"></div>
-                    <div class="image">
-                      <img src="/images/foto-romulo.jpg">
-      
-                    </div>
-                    <div class="perfils">
-                      <div>
-                      <h2> Ing. Sosimo Yucra Rodas</h2>
-                      <h3>Gerente de Ingeniería y Diseño</h3>
-                      <h4>Ingeniero Civil</h4>
-                      <h4>PMI</h4>
-                    </div>
-                    </div>
-                  </fugure>
-                  <div class="experiencia">
-                    <p><ion-icon name="planet"></ion-icon>Especialista en remodelación de edificios, viviendas, oficinas y centros
-                      comerciales </p>
-                      <p><ion-icon name="planet"></ion-icon> Especialista en elaboración y evaluación de expedientes técnicos.
-                        - Especialista en implementación de sistemas de Gestión en las empresas
-                        constructoras.</p>
-                        <p><ion-icon name="planet"></ion-icon>Especialista en las auditorias en sistemas de gestión.
-                          Sistemas de gestión bajo el enfoque de <b>PMI, Normas ISO y Last Planner</b></p>
-      
-                          <p><ion-icon name="planet"></ion-icon>Especialista en Diseños, ejecución y Supervisión de obras, como:</p>
-      
-                          <ul>
-                            <li><ion-icon name="caret-forward-outline"></ion-icon>Edificios</li>
-                            <li><ion-icon name="caret-forward-outline"></ion-icon>Puentes</li>
-                            <li><ion-icon name="caret-forward-outline"></ion-icon>Colegios</li>
-                            <li><ion-icon name="caret-forward-outline"></ion-icon>Naves industriales</li>
-                            <li><ion-icon name="caret-forward-outline"></ion-icon>Viaductos</li>
-                            <li><ion-icon name="caret-forward-outline"></ion-icon>Centros comerciales</li>
-                            <li><ion-icon name="caret-forward-outline"></ion-icon>Cines y teatros</li>
-                          </ul>
-                  </div>
-      
-      
-                </div>
-              </div>
-              <div class="users-info" id="elias">
-                <div class="users-moreinfo" >
-                  <div class='cerrar'>
-                    <div class="white">
-                    </div>
-                    
-                  </div>
-                  <fugure class="figure">
-                    <div class="cir"></div>
-                    <div class="image">
-                      <img src="/images/foto-romulo.jpg">
-      
-                    </div>
-                    <div class="perfils">
-                      <div>
-                      <h2> Ing. Elias Yucra Rodas </h2>
-                      <h3>Gerente Comercial </h3>
-                      <h4> Ing. Ambiental y Sanitario </h4>
-                      <h4> Maestría en Gestión  de Proyectos</h4>
-                    </div>
-                    </div>
-                  </fugure>
-                  <div class="experiencia">
-                    <p><ion-icon name="planet"></ion-icon>Especialista en remodelación de edificios, viviendas, oficinas y centros
-                      comerciales </p>
-                      <p><ion-icon name="planet"></ion-icon> Especialista en elaboración y evaluación de expedientes técnicos.
-                        - Especialista en implementación de sistemas de Gestión en las empresas
-                        constructoras.</p>
-                        <p><ion-icon name="planet"></ion-icon>Especialista en las auditorias en sistemas de gestión.
-                          Sistemas de gestión bajo el enfoque de <b>PMI, Normas ISO y Last Planner</b></p>
-      
-                          <p><ion-icon name="planet"></ion-icon>Especialista en Diseños, ejecución y Supervisión de obras, como:</p>
-      
-                          <ul>
-                            <li><ion-icon name="caret-forward-outline"></ion-icon>Edificios</li>
-                            <li><ion-icon name="caret-forward-outline"></ion-icon>Puentes</li>
-                            <li><ion-icon name="caret-forward-outline"></ion-icon>Colegios</li>
-                            <li><ion-icon name="caret-forward-outline"></ion-icon>Naves industriales</li>
-                            <li><ion-icon name="caret-forward-outline"></ion-icon>Viaductos</li>
-                            <li><ion-icon name="caret-forward-outline"></ion-icon>Centros comerciales</li>
-                            <li><ion-icon name="caret-forward-outline"></ion-icon>Cines y teatros</li>
-                          </ul>
-                  </div>
-      
-      
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
           <div class="tarjetas">
             <div class="user-div">
               <div class="user romulo">
@@ -267,20 +120,113 @@
                 <h3 class="name">Ing. Romulo Yucra Rodas</h3>
                 <h4 class="profesion">Gerente General</h4>
                 <p class="description">
-                  MaestrÍa UNI - Ingeniero Civil <br/>
+                  MaestrÍa UNI - Ingeniero Civil <br />
                   PMI UNI - ISO 9001
                 </p>
                 <hr />
-                <a href="#" class="saber-mas" id="saber-romulo">Saber más</a>
+
+                <div
+                  class="modal fade"
+                  id="exampleModalToggle"
+                  aria-hidden="true"
+                  aria-labelledby="exampleModalToggleLabel"
+                  tabindex="-1"
+                >
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1
+                          class="modal-title fs-5"
+                          id="exampleModalToggleLabel"
+                        >
+                          Ing. Romulo Yucra Rodas
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <figure class="perfil-figure">
+                          <div class="fondo-blue"></div>
+                          <img
+                            alt="Foto de perfil"
+                            src="/images/foto-romulo.jpg"
+                          />
+                          <div class="experiencia">
+                            <h3 class="name">Ing. Romulo Yucra Rodas</h3>
+                            <h4 class="profesion">Gerente General</h4>
+                            <p class="description">
+                              MaestrÍa UNI - Ingeniero Civil <br />
+                              PMI UNI - ISO 9001
+                            </p>
+                          </div>
+                        </figure>
+                        <div class="more-info">
+                          <p><ion-icon name="play-sharp"></ion-icon>
+                            Especialista en remodelación de edificios,
+                            viviendas, oficinas y centros comerciales.
+                          </p>
+                          <p><ion-icon name="play-sharp"></ion-icon>
+                            Especialista en elaboración y evaluación de
+                            expedientes técnicos.
+                          </p>
+                          <p><ion-icon name="play-sharp"></ion-icon>
+                            Especialista en implementación de sistemas de
+                            Gestión en las empresas constructoras.
+                          </p>
+                          <p><ion-icon name="play-sharp"></ion-icon>
+                            Especialista en las auditorías en sistemas de
+                            gestión. Sistemas de gestión bajo el enfoque de PMI,
+                            Normas ISO y Last Planner.
+                          </p>
+                          <p><ion-icon name="play-sharp"></ion-icon>
+                            Especialista en Diseños, ejecución y Supervisión de
+                            obras, como:
+                          </p>
+                          <ul>
+                            <li><ion-icon name="send-sharp"></ion-icon>Edificios</li>
+                            <li><ion-icon name="send-sharp"></ion-icon>Puentes</li>
+                            <li><ion-icon name="send-sharp"></ion-icon>Colegios</li>
+                            <li><ion-icon name="send-sharp"></ion-icon>Naves industriales</li>
+                            <li><ion-icon name="send-sharp"></ion-icon>Viaductos</li>
+                            <li><ion-icon name="send-sharp"></ion-icon>Centros comerciales</li>
+                            <li><ion-icon name="send-sharp"></ion-icon>Cines y teatros</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-danger"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="saber-mas"
+                  data-bs-toggle="modal"
+                  href="#exampleModalToggle"
+                  role="button"
+                >
+                  Saber más
+                </button>
               </div>
+
+
+              
               <div class="user william">
                 <div class="circule"></div>
                 <img src="/images/foto-romulo.jpg" />
                 <h3 class="name">Ing. William Yucra Rodas</h3>
                 <h4 class="profesion">Gerente de Operaciones</h4>
-                <p class="description">
-                  Maestría en Gestión de Proyectos.
-                </p>
+                <p class="description">Maestría en Gestión de Proyectos.</p>
                 <hr />
                 <a href="#" class="saber-mas" id="saber-william">Saber más</a>
               </div>
@@ -291,9 +237,7 @@
                 <img src="/images/foto-romulo.jpg" />
                 <h3 class="name">Sosimo Yucra Rodas</h3>
                 <h4 class="profesion">Gerente de Ingeniería y Diseño</h4>
-                <p class="description">
-                  Ingeniero Civil - PMP
-                </p>
+                <p class="description">Ingeniero Civil - PMP</p>
                 <hr />
                 <a href="#" class="saber-mas" id="saber-sosimo">Saber más</a>
               </div>
@@ -304,8 +248,8 @@
                 <h3 class="name">Elias Yucra Rodas</h3>
                 <h4 class="profesion">Gerente Comercial</h4>
                 <p class="description">
-                  Ing. Ambiental y sanitario <br/>
-Maestría en Gestión  de Proyectos
+                  Ing. Ambiental y sanitario <br />
+                  Maestría en Gestión de Proyectos
                 </p>
                 <hr />
                 <a href="#" class="saber-mas" id="saber-elias">Saber más</a>
@@ -397,7 +341,6 @@ Maestría en Gestión  de Proyectos
         </div>
       </div>
     </main>
-    
 
     <footer>
       <div class="container">
@@ -416,7 +359,5 @@ Maestría en Gestión  de Proyectos
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-
-
   </body>
 </html>

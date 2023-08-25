@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:600,700|Quicksand:300,400|Yeon+Sung&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:600,700|Quicksand:300,400|Yeon+Sung&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -19,44 +21,46 @@ body {
   padding: 10px;
 }
 
-main {
+.main-titulo {
   overflow: hidden;
+  position: relative;
 }
 
-main .main-fondo {
-  height: 75vh;
-  width: 100%;
-  background: #e5d8bf url("/images/portada.jpg");
-  opacity: 0.2;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-main .container {
+.main-titulo::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/images/portada.jpg") no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.main-titulo .container {
+  top: 70px;
+  left: 0;
   right: 0;
-  bottom: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
-main .container .main-texto {
-  position: relative;
+.main-titulo .container .main-texto {
   width: 100%;
   text-align: center;
   line-height: 48px;
+  margin: 100px auto 0 auto;
 }
 
-main .container .main-texto h1 {
+.main-titulo .container .main-texto h1 {
   line-height: 55px;
 }
-main .container .main-texto h1.titulo {
+.main-titulo .container .main-texto h1.titulo {
   font-family: "Poppins", sans-serif;
   width: 100%;
   color: red;
@@ -66,29 +70,136 @@ main .container .main-texto h1.titulo {
   margin-bottom: 25px;
 }
 
-main .container .main-texto span {
-  position: absolute;
-  margin-left: auto;
-  margin-top: 0px;
-  width: 100%;
-  left: 0;
-  margin-bottom: 150px;
-}
-
-main .container .main-texto span h3 {
-  font-size: 25px;
-  background: rgb(2, 2, 85);
-  padding: 5px;
-  color: white;
-  border-radius: 10px;
-  min-height: 60px;
-}
-
-main .container .main-redes-sociales {
+.movimiento {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.movimiento .soluciones {
+  color: green;
+  font-weight: bolder;
 }
 
-main .container .main-redes-sociales .rs-tipo {
+.main-titulo .container .main-texto span {
+  margin-top: 0px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  height: 45px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: rgb(2, 2, 85);
+}
+@media screen and (max-width: 768px) {
+  .main-titulo .container .main-texto span {
+    height: 30px;
+  }
+}
+
+.main-titulo .container .main-texto span ul {
+  font-size: 25px;
+  color: white;
+  width: 500px;
+  animation: movimiento 10s infinite;
+}
+@media screen and (max-width: 420px) {
+  .main-titulo .container .main-texto span ul {
+    animation: movimiento2 10s infinite;
+  }
+}
+
+@keyframes movimiento {
+  0% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: -40px;
+  }
+  30% {
+    margin-top: -40px;
+  }
+  35% {
+    margin-top: -80px;
+  }
+  45% {
+    margin-top: -80px;
+  }
+  50% {
+    margin-top: -120px;
+  }
+  65% {
+    margin-top: -120px;
+  }
+  70% {
+    margin-top: -80px;
+  }
+  85% {
+    margin-top: -80px;
+  }
+  90% {
+    margin-top: -40px;
+  }
+  95% {
+    margin-top: -40px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+@keyframes movimiento2 {
+  0% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: -40px;
+  }
+  30% {
+    margin-top: -40px;
+  }
+  35% {
+    margin-top: -70px;
+  }
+  45% {
+    margin-top: -70px;
+  }
+  50% {
+    margin-top: -110px;
+  }
+  65% {
+    margin-top: -110px;
+  }
+  70% {
+    margin-top: -70px;
+  }
+  85% {
+    margin-top: -70px;
+  }
+  90% {
+    margin-top: -40px;
+  }
+  95% {
+    margin-top: -40px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+.main-titulo .container .main-redes-sociales {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  transition: 0.5s ease;
+  position: static;
+}
+
+.main-titulo .container .main-redes-sociales .rs-tipo {
   width: 50px;
   height: 50px;
   display: flex;
@@ -97,28 +208,10 @@ main .container .main-redes-sociales .rs-tipo {
   font-size: 1.5em;
 }
 
-main .container .main-redes-sociales .rs-tipo ion-icon {
+.main-titulo .container .main-redes-sociales .rs-tipo ion-icon {
   font-size: 20px;
   color: white;
-  -webkit-animation: agrandar 5s linear infinite;
-          animation: agrandar 5s linear infinite;
-}
-
-@-webkit-keyframes agrandar {
-  from {
-    opacity: 0;
-    transform: scale(0);
-  }
-  70% {
-    transform: scale(1.4);
-  }
-  90% {
-    transform: scale(0.8);
-  }
-  to {
-    opacity: 1;
-    transform: scale(0.5);
-  }
+  animation: agrandar 5s linear infinite;
 }
 
 @keyframes agrandar {
@@ -137,72 +230,72 @@ main .container .main-redes-sociales .rs-tipo ion-icon {
     transform: scale(0.5);
   }
 }
-main .container .main-redes-sociales .youtube {
+.main-titulo .container .main-redes-sociales .youtube {
   background: #b32727;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   transition: all ease-in 0.5s;
 }
 
-main .container .main-redes-sociales .youtube:hover {
+.main-titulo .container .main-redes-sociales .youtube:hover {
   background: #d32d2d;
 }
 
-main .container .main-redes-sociales .facebook {
+.main-titulo .container .main-redes-sociales .facebook {
   background: #441df2;
   transition: all ease-in 0.5s;
 }
 
-main .container .main-redes-sociales .facebook:hover {
+.main-titulo .container .main-redes-sociales .facebook:hover {
   background: #3862eb;
 }
 
-main .container .main-redes-sociales .linkedin {
+.main-titulo .container .main-redes-sociales .linkedin {
   background: rgb(74, 123, 228);
   transition: all ease-in 0.5s;
 }
 
-main .container .main-redes-sociales .linkedin:hover {
+.main-titulo .container .main-redes-sociales .linkedin:hover {
   background: #3862eb;
 }
 
-main .container .main-redes-sociales .whatsapp {
+.main-titulo .container .main-redes-sociales .whatsapp {
   background: #068601;
   transition: all ease-in 0.5s;
 }
 
-main .container .main-redes-sociales .whatsapp:hover {
+.main-titulo .container .main-redes-sociales .whatsapp:hover {
   background: #28b10c;
 }
 
-main .container .main-redes-sociales .instagram {
+.main-titulo .container .main-redes-sociales .instagram {
   background: #c32aa3;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   transition: all ease-in 0.5s;
 }
 
-main .container .main-redes-sociales .instagram:hover {
+.main-titulo .container .main-redes-sociales .instagram:hover {
   background: #db2eb6;
 }
 
 @media screen and (min-width: 768px) {
-  main .container .main-texto h1 {
+  .main-titulo .container .main-texto h1 {
     font-size: 35.2px;
   }
-  main .container .main-texto span {
+  .main-titulo .container .main-texto span {
     font-size: 20px;
   }
-  main .container .main-redes-sociales .rs-tipo {
+  .main-titulo .container .main-redes-sociales .rs-tipo {
     width: 65px;
     height: 65px;
   }
 }
 @media screen and (min-width: 1024px) {
-  main .container .main-texto h1 {
+  .main-titulo .container .main-texto h1 {
     font-size: 38.4px;
   }
-  main .container .main-texto span {
+  .main-titulo .container .main-texto span {
     font-size: 22px;
   }
 }
@@ -245,6 +338,9 @@ main .container .main-redes-sociales .instagram:hover {
   max-width: 850px;
   text-align: justify;
   padding: 12px;
+  font-family: "Poppins", sans-serif;
+  line-height: 28px;
+  font-size: 17px;
 }
 .main-main .main .contac-main {
   display: grid;
@@ -329,11 +425,17 @@ main .container .main-redes-sociales .instagram:hover {
 }
 
 @media screen and (max-width: 1360px) {
+  .main-main {
+    margin-top: 50px;
+  }
   .main-main .main .title {
     margin: auto 15px;
   }
 }
 @media screen and (max-width: 1040px) {
+  .main-main {
+    margin-top: 50px;
+  }
   .main-main .main .contac-main .contact {
     flex-direction: column;
     transition: all 0.5s ease;
@@ -366,99 +468,38 @@ main .container .main-redes-sociales .instagram:hover {
   }
 }
 @media screen and (max-width: 560px) {
-  main .container .main-texto h1 {
+  .main-titulo .container .main-texto {
+    margin-top: 20px;
+  }
+  .main-titulo .container .main-texto h1 {
     line-height: 55px;
   }
-  main .container .main-texto h1.titulo {
+  .main-titulo .container .main-texto h1.titulo {
     font-size: 45px;
     margin-bottom: 10px;
   }
-  main .container .main-texto span h3 {
-    font-size: 20px;
-    margin-bottom: 150px;
+  .main-titulo .container .main-texto span {
+    height: 30px;
   }
 }
-.main-main .main .perfiles {
-  display: grid;
-  place-items: center;
-  margin-bottom: 30px;
-  margin-top: 30px;
-}
-.main-main .main .perfiles h2 {
-  color: rgb(4, 4, 175);
-}
-.main-main .main .perfiles .tarjetas {
-  display: flex;
-  transition: ease-in-out 1s;
-}
-.main-main .main .perfiles .tarjetas .user-div {
-  display: flex;
-  transition: ease-in-out 1s;
-}
-.main-main .main .perfiles .user {
-  position: relative;
-  display: grid;
-  place-items: center;
-  margin-top: 25px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  padding: 20px;
-  border-radius: 12px;
-  overflow: hidden;
-  margin-left: 25px;
-  margin-right: 25px;
-  max-width: 280px;
-  transition: ease 0.5s;
-}
-.main-main .main .perfiles .user .circule {
-  position: absolute;
-  background: #0b6f72;
-  height: 350px;
-  width: 370px;
-  z-index: -1;
-  transform: translateY(-250px);
-  border-radius: 100px;
-}
-.main-main .main .perfiles .user img {
-  max-width: 150px;
-  height: 148px;
-  border-radius: 50%;
-  background: white;
-  padding: 8px;
-}
-.main-main .main .perfiles .user .name {
-  margin-top: 15px;
-  font-weight: bolder;
-  margin-bottom: -7px;
-}
-.main-main .main .perfiles .user .profesion {
-  margin-bottom: 25px;
-}
-.main-main .main .perfiles .user .description {
-  max-width: 320px;
-  margin-bottom: 35px;
-  text-align: center;
-}
-.main-main .main .perfiles .user hr {
-  height: 3px;
-  width: 100%;
-  margin-bottom: 25px;
-  background: #0b6f72;
-  border: none;
-}
-.main-main .main .perfiles .user .saber-mas {
-  border: 3px solid red;
-  padding: 7px 10px;
-  border-radius: 10px;
-  color: red;
-}
-.main-main .main .perfiles .user .saber-mas:hover {
-  color: #fff;
-  background: red;
-}
-
 @media screen and (max-width: 1200px) {
+  .main-main {
+    margin-top: 50px;
+  }
   .main-main .main .perfiles .tarjetas {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 380px) {
+  .main-titulo {
+    height: 450px;
+  }
+  .main-texto {
+    margin-bottom: 0;
+    margin-top: 50px;
+  }
+  .main-redes-sociales {
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 657px) {

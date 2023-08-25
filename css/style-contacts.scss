@@ -13,9 +13,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 25px;
+    margin-right: 25px;
 .contac-main{
   display: grid;
-    margin-top: 8%;
+    margin-top: 51px;
     h2{
       margin: auto;
       text-align: center;
@@ -25,14 +27,7 @@ body {
         margin-bottom: 40px;
         color: rgb(235, 66, 66);
         font-size: 40px;
-        display: grid;
         font-weight: bold;
-        &::after{
-            content: "";
-            border-bottom: rgb(235, 66, 66) 2px solid;
-            margin-top: 8px;
-            width: 300px;
-        }
     }
     .contact{
       margin: auto;
@@ -84,6 +79,7 @@ body {
             font-size: 17px;
             border-radius: 5px;
             border: none;
+            padding: 8px;
           }
           .coment{
             height: auto;
@@ -179,6 +175,10 @@ body {
       .contac-main{
         margin-top: 110px;
         transition: all 0.5s ease;
+        .titulo{
+          font-size: 30px;
+          max-width: 150px;
+        }
         .contact{
           flex-direction: column;
           .info{
@@ -193,9 +193,23 @@ body {
             border-bottom-right-radius: 15px ;
             border-top-right-radius: 0;
             margin: auto;
+            h2{
+              font-size: 19px;
+            }
         }
         }
         
+      }
+    }
+    .redes-sociales{
+      .main-redes-sociales{
+        .rs-tipo{
+          ion-icon{
+            font-size: 1.2em;
+            padding: 25px;
+            color: aliceblue;
+        }
+        }
       }
     }
   }

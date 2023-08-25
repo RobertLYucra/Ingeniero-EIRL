@@ -36,7 +36,7 @@ main .content-main .elements .product-cards .cards {
   display: flex;
   border-radius: 25px;
   transition: all 0.5s ease;
-  background: rgb(233, 232, 235);
+  background: rgb(235, 231, 241);
 }
 main .content-main .elements .product-cards .cards img {
   width: 650px;
@@ -51,6 +51,8 @@ main .content-main .elements .product-cards .cards .text {
 }
 main .content-main .elements .product-cards .cards .text h3 {
   margin-bottom: 25px;
+  color: green;
+  font-weight: bold;
 }
 main .content-main .elements .product-cards .cards .text p {
   margin: 5px 15px 40px 0;

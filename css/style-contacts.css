@@ -15,10 +15,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 .main .contac-main {
   display: grid;
-  margin-top: 8%;
+  margin-top: 51px;
 }
 .main .contac-main h2 {
   margin: auto;
@@ -29,14 +31,7 @@ body {
   margin-bottom: 40px;
   color: rgb(235, 66, 66);
   font-size: 40px;
-  display: grid;
   font-weight: bold;
-}
-.main .contac-main .titulo::after {
-  content: "";
-  border-bottom: rgb(235, 66, 66) 2px solid;
-  margin-top: 8px;
-  width: 300px;
 }
 .main .contac-main .contact {
   margin: auto;
@@ -89,6 +84,7 @@ body {
   font-size: 17px;
   border-radius: 5px;
   border: none;
+  padding: 8px;
 }
 .main .contac-main .contact .form .form-form form .coment {
   height: auto;
@@ -171,6 +167,10 @@ body {
     margin-top: 110px;
     transition: all 0.5s ease;
   }
+  .main .contac-main .titulo {
+    font-size: 30px;
+    max-width: 150px;
+  }
   .main .contac-main .contact {
     flex-direction: column;
   }
@@ -186,5 +186,13 @@ body {
     border-bottom-right-radius: 15px;
     border-top-right-radius: 0;
     margin: auto;
+  }
+  .main .contac-main .contact .form h2 {
+    font-size: 19px;
+  }
+  .redes-sociales .main-redes-sociales .rs-tipo ion-icon {
+    font-size: 1.2em;
+    padding: 25px;
+    color: aliceblue;
   }
 }/*# sourceMappingURL=style-contacts.css.map */

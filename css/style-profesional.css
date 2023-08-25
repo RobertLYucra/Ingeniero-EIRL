@@ -12,7 +12,7 @@ body {
 }
 
 main {
-  margin-top: 120px;
+  margin-top: 40px;
   font-family: "Poppins", sans-serif;
 }
 main .main-content .logros {
@@ -53,7 +53,7 @@ main .main-content .logros .cards .images .face img {
   margin-bottom: -10px;
 }
 main .main-content .logros .cards .images .face:hover {
-  transform: scale(1.2);
+  transform: scale(1.005);
   z-index: 9;
 }
 main .main-content .logros .cards .images .face:hover img {
@@ -81,7 +81,8 @@ main .main-content .projects .exp {
   border-radius: 10px;
   margin: auto;
 }
-main .main-content .projects .exp h2, main .main-content .projects .exp p {
+main .main-content .projects .exp h2,
+main .main-content .projects .exp p {
   text-align: center;
   margin: auto;
   font-weight: bold;
@@ -109,7 +110,7 @@ main .main-content .projects .cards .images .face img {
   cursor: pointer;
 }
 main .main-content .projects .cards .images .face:hover {
-  transform: scale(1.2);
+  transform: scale(1.005);
   z-index: 9;
 }
 main .main-content .projects .cards .images .face:hover img {
@@ -294,6 +295,62 @@ main .main-content .projects .cards .images .face:hover::before {
   color: #fff;
   background: red;
 }
+.main-content .perfiles .user .perfil-figure {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  border: 2px solid red;
+  border-radius: 20px;
+  background: rgb(232, 239, 241);
+}
+.main-content .perfiles .user .perfil-figure .fondo-blue {
+  position: absolute;
+  height: 280px;
+  width: 223px;
+  z-index: 1;
+  background-color: #212de2;
+}
+.main-content .perfiles .user .perfil-figure img {
+  border-radius: 50%;
+  z-index: 2;
+  position: relative;
+  padding: 0;
+  max-width: 200px;
+  height: 200px;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 5px;
+}
+.main-content .perfiles .user .perfil-figure .experiencia {
+  margin-left: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 470px) {
+  .main-content .perfiles .user .perfil-figure {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-content .perfiles .user .perfil-figure .fondo-blue {
+    width: 100%;
+    height: 160px;
+  }
+  .main-content .perfiles .user .perfil-figure img {
+    height: 180px;
+    width: 180px;
+  }
+}
+.main-content .perfiles .user .more-info {
+  margin: 50px;
+}
+@media screen and (max-width: 470px) {
+  .main-content .perfiles .user .more-info {
+    margin: 10px;
+  }
+}
 
 @media screen and (max-width: 1200px) {
   .main-content .perfiles .tarjetas {
@@ -373,7 +430,7 @@ main .main-content .projects .cards .images .face:hover::before {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   padding: 25px;
-  box-shadow: 0PX -20px 50px 30px black;
+  box-shadow: 0px -20px 50px 30px black;
 }
 .tarjetas-info .users-info .users-moreinfo .figure .cir {
   width: 200px;
@@ -396,6 +453,7 @@ main .main-content .projects .cards .images .face:hover::before {
   padding: 5px;
   background-color: white;
   height: 248px;
+  border: 5px solid #212de2;
 }
 .tarjetas-info .users-info .users-moreinfo .figure .perfils {
   display: grid;
@@ -414,30 +472,6 @@ main .main-content .projects .cards .images .face:hover::before {
   margin-bottom: 50px;
   border-bottom: 2px solid red;
 }
-.tarjetas-info .users-info .users-moreinfo .experiencia {
-  padding: 25px;
-  line-height: 25px;
-  background-color: #fff;
-  z-index: 5;
-  display: grid;
-  place-items: center;
-  box-shadow: 0PX 30px 50px 30px black;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-.tarjetas-info .users-info .users-moreinfo .experiencia p {
-  margin: 5px auto;
-}
-.tarjetas-info .users-info .users-moreinfo .experiencia p .md {
-  margin-right: 10px;
-  color: #4550ec;
-}
-.tarjetas-info .users-info .users-moreinfo .experiencia ul li {
-  margin: 5px auto;
-}
-.tarjetas-info .users-info .users-moreinfo .experiencia ul li .md {
-  color: #1221ec;
-}
 
 @media screen and (max-width: 510px) {
   .tarjetas-info .users-info .users-moreinfo .figure {
@@ -454,11 +488,6 @@ main .main-content .projects .cards .images .face:hover::before {
     max-width: 150px;
     max-height: 148px;
     margin-bottom: 15px;
-  }
-  .tarjetas-info .users-info .users-moreinfo .experiencia {
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    max-width: 360px;
   }
 }
 @media screen and (max-width: 400px) {
