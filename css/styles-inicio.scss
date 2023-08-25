@@ -65,89 +65,23 @@ body {
     margin-bottom: 25px;
   }
 }
-.movimiento{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  .soluciones{
-    color: green;
-    font-weight: bolder;
-  }
-}
 
 .main-titulo .container .main-texto span {
+  margin-left: auto;
   margin-top: 0px;
-  width: 500px;
+  width: 100%;
   display: flex;
   justify-content: center;
-  height: 45px;
-  border-radius: 15px;
-  overflow: hidden;
-  background: rgb(2, 2, 85);
-  @media screen and (max-width: 768px) {
-    height: 30px;
-
-  }
 }
-.main-titulo .container .main-texto span ul{
+.main-titulo .container .main-texto span h3 {
   font-size: 25px;
-  
+  background: rgb(2, 2, 85);
+  padding: 5px;
   color: white;
-  width: 500px;
-  animation: movimiento 10s infinite;
-  @media screen and (max-width: 420px) {
-    animation: movimiento2 10s infinite;
-  }
-
+  border-radius: 10px;
+  width: 800px;
+  min-height: 50px;
 }
-
-
-@keyframes movimiento{
-  0%{margin-top: 0;}
-  20%{margin-top: 0;}
-
-  25%{margin-top: -40px;}
-  30%{margin-top: -40px;}
-
-  35%{margin-top: -80px;}
-  45%{margin-top: -80px;}
-
-  50%{margin-top: -120px;}
-  65%{margin-top: -120px;}
-
-  70%{margin-top: -80px;}
-  85%{margin-top: -80px;}
-  
-  90%{margin-top: -40px;}
-  95%{margin-top: -40px;}
-
-  100%{margin-top: 0px;}
-}
-
-@keyframes movimiento2{
-  0%{margin-top: 0;}
-  20%{margin-top: 0;}
-
-  25%{margin-top: -40px;}
-  30%{margin-top: -40px;}
-
-  35%{margin-top: -70px;}
-  45%{margin-top: -70px;}
-
-  50%{margin-top: -110px;}
-  65%{margin-top: -110px;}
-
-  70%{margin-top: -70px;}
-  85%{margin-top: -70px;}
-  
-  90%{margin-top: -40px;}
-  95%{margin-top: -40px;}
-
-  100%{margin-top: 0px;}
-}
-
-
 .main-titulo .container .main-redes-sociales {
   display: flex;
   margin-top: 50px;
@@ -225,12 +159,14 @@ body {
   background: #db2eb6;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .main-titulo .container .main-texto h1 {
     font-size: 35.2px;
   }
   .main-titulo .container .main-texto span {
     font-size: 20px;
+    height: 80px;
+
   }
   .main-titulo .container .main-redes-sociales .rs-tipo {
     width: 65px;
@@ -274,6 +210,8 @@ body {
       .quienes {
         display: grid;
         place-items: center;
+        margin-top: 25px;
+        margin-bottom: 10px;
         h1 {
           color: rgb(4, 4, 175);
           padding-bottom: 5px;
@@ -434,6 +372,12 @@ body {
 @media screen and (max-width: 560px) {
   .main-titulo .container .main-texto {
     margin-top: 20px;
+    span{
+      height: 70px;
+      h3{
+        font-size: 18px;
+      }
+    }
   }
   .main-titulo .container .main-texto h1 {
     line-height: 55px;
@@ -443,9 +387,8 @@ body {
     }
   }
 
-  .main-titulo .container .main-texto span{
-    height: 30px;
-  }
+ 
+  
 }
 
 @media screen and (max-width: 1200px) {
