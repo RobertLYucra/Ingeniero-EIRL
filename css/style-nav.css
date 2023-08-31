@@ -74,11 +74,11 @@ a {
 }
 
 footer {
-  background: #570505;
+  background: rgb(158, 2, 15);
   color: #f1f1f1;
   justify-content: center;
   align-items: center;
-  border-top: 4px solid #080f69;
+  border-top: 4px solid rgb(0, 32, 96);
 }
 
 footer p {
