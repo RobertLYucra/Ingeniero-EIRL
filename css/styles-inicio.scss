@@ -160,17 +160,50 @@ body {
   background: #db2eb6;
 }
 
-.container{
-  .frase{
-    h5{
+.container {
+  .frase {
+    h5 {
       text-align: center;
       color: white;
-      border:1px solid;
+      border: 1px solid #235f91;
       border-radius: 10px;
+      transition: 0.5 ease;
+      background: linear-gradient(45deg,red,blue);
+      animation: movimiento 10s alternate infinite;
+
       @media screen and (min-width: 429px) {
         padding: 15px 10px;
       }
     }
+  }
+}
+
+@keyframes movimiento {
+  0% {
+    transform: scale(0.8);
+  }
+
+  25% {
+    transform: scale(0.9);
+  }
+
+  35% {
+    transform: scale(1.001);
+  }
+
+  50% {
+    transform: scale(1.002);
+  }
+
+  65% {
+    transform: scale(1.001);
+  }
+
+  75% {
+    transform: scale(0.9);
+  }
+  100%{
+    transform: scale(0.8);
   }
 }
 
